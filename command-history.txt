@@ -11,3 +11,4 @@ pnpm install
 pnpm run dev
 
 gh repo create
+# create LICENSE on GitHub

@@ -1,0 +1,6 @@
+pnpm create vite twoshot-checker --template react-ts
+cd twoshot-checker
+touch command-history.txt
+git init
+git add --all
+# git commit --message "Initial commit"

@@ -4,3 +4,5 @@ touch command-history.txt
 git init
 git add --all
 # git commit --message "Initial commit"
+
+echo "auto-install-peers=true" > .npmrc

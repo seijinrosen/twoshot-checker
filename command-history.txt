@@ -7,3 +7,5 @@ git add --all
 
 echo "auto-install-peers=true" > .npmrc
 touch Makefile
+pnpm install
+pnpm run dev

@@ -13,3 +13,5 @@ pnpm run dev
 gh repo create
 # create LICENSE on GitHub
 git switch --create develop
+
+pnpm add @chakra-ui/react @emotion/react@\^11 @emotion/styled@\^11 framer-motion@\^6

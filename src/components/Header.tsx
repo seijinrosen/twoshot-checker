@@ -2,8 +2,8 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
+  Heading,
   IconButton,
-  Link,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -27,7 +27,9 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       backdropFilter="saturate(180%) blur(5px)"
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Link href="/">TWOSHOT CHECKER</Link>
+        <Heading as="a" href="/" size="md">
+          TWOSHOT CHECKER
+        </Heading>
         <SearchField
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}

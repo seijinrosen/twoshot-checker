@@ -5,12 +5,14 @@ import {
   InputRightElement,
   Kbd,
   Tooltip,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { SearchFieldType } from "../types";
 
 const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
+  const [isLargerThan600] = useMediaQuery("(min-width: 600px)");
   const inputRef = useRef<HTMLInputElement>(null);
   const focusTextField = () => inputRef.current?.focus();
 
@@ -34,7 +36,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
             <Tooltip hasArrow label="消去">
               <CloseButton onClick={() => setSearchQuery("")} />
             </Tooltip>
-          ) : (
+          ) : isLargerThan600 ? (
             <Tooltip
               hasArrow
               label='スラッシュキー ( "/" ) を押して検索フィールドに移動できます'
@@ -48,7 +50,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
                 /
               </Kbd>
             </Tooltip>
-          )
+          ) : null
         }
       />
     </InputGroup>

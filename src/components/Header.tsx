@@ -27,7 +27,7 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       backdropFilter="saturate(180%) blur(5px)"
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Heading as="a" href="/" size="md">
+        <Heading as="a" href="/" size="md" mr={1}>
           TWOSHOT CHECKER
         </Heading>
         <SearchField
@@ -38,6 +38,7 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
           onClick={toggleColorMode}
           aria-label="Toggle color mode"
           icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+          ml={1}
         />
       </Flex>
     </Box>

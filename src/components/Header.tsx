@@ -6,8 +6,10 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { SearchFieldType } from "../types";
+import SearchField from "./SearchField";
 
-const Header = () => {
+const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -22,6 +24,10 @@ const Header = () => {
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <Box>TWOSHOT CHECKER</Box>
+        <SearchField
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
         <IconButton
           onClick={toggleColorMode}
           aria-label="Toggle color mode"

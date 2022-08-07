@@ -8,14 +8,9 @@ import {
 } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
+import { SearchFieldType } from "../types";
 
-const SearchField = ({
-  searchQuery,
-  setSearchQuery,
-}: {
-  searchQuery: string;
-  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
-}) => {
+const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const focusTextField = () => inputRef.current?.focus();
 

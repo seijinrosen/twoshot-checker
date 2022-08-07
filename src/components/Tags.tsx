@@ -30,6 +30,7 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
           // colorScheme="teal"
           size="xs"
           mr={1}
+          mb={1}
           key={i}
           onClick={() => console.log(mainIds)}
         >

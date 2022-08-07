@@ -8,12 +8,17 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <Container maxW="container.md">
+    <>
       <Header />
-      <SearchField searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <div>Result: {searchQuery}</div>
-      <Tags searchQuery={searchQuery} />
-    </Container>
+      <Container as="main" maxW="container.md">
+        <SearchField
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
+        <div>Result: {searchQuery}</div>
+        <Tags searchQuery={searchQuery} />
+      </Container>
+    </>
   );
 }
 

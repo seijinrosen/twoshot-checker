@@ -1,17 +1,34 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { IconButton, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  IconButton,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <header>
-      <IconButton
-        onClick={toggleColorMode}
-        aria-label="Toggle color mode"
-        icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-      />
-    </header>
+    <Box
+      as="header"
+      sx={{
+        position: "sticky",
+        top: "0",
+      }}
+      bg={useColorModeValue("gray.100", "gray.900")}
+      px={4}
+    >
+      <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Box>TWOSHOT CHECKER</Box>
+        <IconButton
+          onClick={toggleColorMode}
+          aria-label="Toggle color mode"
+          icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+        />
+      </Flex>
+    </Box>
   );
 };
 

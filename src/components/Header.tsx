@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   IconButton,
+  Link,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -15,15 +16,18 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
   return (
     <Box
       as="header"
-      sx={{
-        position: "sticky",
-        top: "0",
-      }}
-      bg={useColorModeValue("gray.100", "gray.900")}
+      zIndex={999}
+      pos="sticky"
+      top={0}
+      bg={useColorModeValue(
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(26, 32, 44, 0.8)"
+      )}
       px={4}
+      backdropFilter="saturate(180%) blur(5px)"
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Box>TWOSHOT CHECKER</Box>
+        <Link href="/">TWOSHOT CHECKER</Link>
         <SearchField
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}

@@ -23,6 +23,7 @@ const shorten = (text: string) => {
 
 const Tags = ({ searchQuery }: { searchQuery: string }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedName, setSelectedName] = useState("");
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
   const [onesAndTags] = useState(shuffle(onesJson.concat(tagsJson)));
@@ -43,6 +44,7 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
           key={i}
           onClick={() => {
             onOpen();
+            setSelectedName(name);
             setSelectedIds(mainIds);
           }}
         >
@@ -53,7 +55,12 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
             : name}
         </Button>
       ))}
-      <MyModal isOpen={isOpen} onClose={onClose} selectedIds={selectedIds} />
+      <MyModal
+        isOpen={isOpen}
+        onClose={onClose}
+        name={selectedName}
+        selectedIds={selectedIds}
+      />
     </div>
   );
 };

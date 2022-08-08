@@ -17,3 +17,4 @@ git switch --create develop
 pnpm add @chakra-ui/react @emotion/react@\^11 @emotion/styled@\^11 framer-motion@\^6
 pnpm add react-hotkeys-hook
 pnpm add @chakra-ui/icons
+pnpm add react-icons

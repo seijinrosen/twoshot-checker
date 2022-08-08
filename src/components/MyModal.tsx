@@ -2,7 +2,8 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Button,
   Highlight,
-  Link,
+  LinkBox,
+  LinkOverlay,
   ListItem,
   Modal,
   ModalBody,
@@ -26,21 +27,23 @@ const ModalListItem = ({
 
   return (
     <ListItem>
-      <Link href={`https://youtu.be/${videoId}`} isExternal>
-        <Highlight
-          query={tagName}
-          styles={{
-            px: 1,
-            mx: 1,
-            fontWeight: "bold",
-            rounded: 5,
-            bg: "orange.100",
-          }}
-        >
-          {title}
-        </Highlight>
-        <ExternalLinkIcon mx="2px" color="green.500" />
-      </Link>
+      <LinkBox as="article" p="5" borderWidth="1px" rounded="md">
+        <LinkOverlay href={`https://youtu.be/${videoId}`} isExternal>
+          <Highlight
+            query={tagName}
+            styles={{
+              px: 1,
+              mx: 1,
+              fontWeight: "bold",
+              rounded: 5,
+              bg: "orange.100",
+            }}
+          >
+            {title}
+          </Highlight>
+          <ExternalLinkIcon mx="2px" color="green.500" />
+        </LinkOverlay>
+      </LinkBox>
     </ListItem>
   );
 };
@@ -62,7 +65,7 @@ const MyModal = ({
       <ModalHeader>{tagName}</ModalHeader>
       <ModalCloseButton />
       <ModalBody>
-        <UnorderedList spacing={3}>
+        <UnorderedList spacing={3} listStyleType="none" m={0}>
           {mainIds.map((mainId) => (
             <ModalListItem key={mainId} mainId={mainId} tagName={tagName} />
           ))}

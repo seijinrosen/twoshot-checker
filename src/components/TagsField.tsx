@@ -21,7 +21,7 @@ const shorten = (text: string) => {
   return 25 < text.length ? text.slice(0, 25) + "..." : text;
 };
 
-const Tags = ({ searchQuery }: { searchQuery: string }) => {
+const TagsField = ({ searchQuery }: { searchQuery: string }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedName, setSelectedName] = useState("");
   const [selectedMainIds, setSelectedMainIds] = useState<number[]>([]);
@@ -66,4 +66,4 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
   );
 };
 
-export default Tags;
+export default TagsField;

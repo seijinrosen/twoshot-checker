@@ -1,8 +1,9 @@
-import { Button, Text, useMediaQuery } from "@chakra-ui/react";
+import { Button, Text, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
-import tagsJson from "../assets/tags.json";
+import topicsJson from "../assets/topics.json";
 import { shuffle } from "../util";
+import MyModal from "./MyModal";
 
 const colored = (text: string, searchQuery: string) => {
   const i = text.toLowerCase().indexOf(searchQuery.toLowerCase());
@@ -21,9 +22,12 @@ const shorten = (text: string) => {
 };
 
 const Tags = ({ searchQuery }: { searchQuery: string }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedName, setSelectedName] = useState("");
+  const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
-  const [onesAndTags] = useState(shuffle(onesJson.concat(tagsJson)));
-  const filtered = onesAndTags.filter(({ name }) =>
+  const [onesAndTopics] = useState(shuffle(onesJson.concat(topicsJson)));
+  const filtered = onesAndTopics.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -38,7 +42,12 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
           mr={1}
           mb={1}
           key={i}
-          onClick={() => console.log(mainIds)}
+          rounded={10}
+          onClick={() => {
+            onOpen();
+            setSelectedName(name);
+            setSelectedIds(mainIds);
+          }}
         >
           {searchQuery
             ? colored(name, searchQuery)
@@ -47,6 +56,12 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
             : name}
         </Button>
       ))}
+      <MyModal
+        isOpen={isOpen}
+        onClose={onClose}
+        name={selectedName}
+        selectedIds={selectedIds}
+      />
     </div>
   );
 };

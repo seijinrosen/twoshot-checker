@@ -1,7 +1,7 @@
 import { Button, Text, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
-import tagsJson from "../assets/tags.json";
+import topicsJson from "../assets/topics.json";
 import { shuffle } from "../util";
 import MyModal from "./MyModal";
 
@@ -26,8 +26,8 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
   const [selectedName, setSelectedName] = useState("");
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
-  const [onesAndTags] = useState(shuffle(onesJson.concat(tagsJson)));
-  const filtered = onesAndTags.filter(({ name }) =>
+  const [onesAndTopics] = useState(shuffle(onesJson.concat(topicsJson)));
+  const filtered = onesAndTopics.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 

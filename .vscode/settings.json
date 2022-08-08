@@ -8,6 +8,6 @@
     ".vscode-insiders",
     "pnpm-lock.yaml",
     "raw.json",
-    "tags.json"
+    "topics.json"
   ]
 }

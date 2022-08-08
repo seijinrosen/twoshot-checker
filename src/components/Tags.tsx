@@ -29,7 +29,9 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
 
   return (
     <div>
-      <p>{filtered.length} 件</p>
+      <Text fontSize="sm" mb={2}>
+        トークデッキ: {filtered.length.toLocaleString()} 枚
+      </Text>
       {filtered.map(({ name, mainIds }, i) => (
         <Button
           size="xs"

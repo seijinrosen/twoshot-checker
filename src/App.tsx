@@ -9,8 +9,7 @@ function App() {
   return (
     <>
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <Container as="main" maxW="container.md">
-        <div>Result: {searchQuery}</div>
+      <Container as="main" maxW="container.md" mt={4}>
         <Tags searchQuery={searchQuery} />
       </Container>
     </>

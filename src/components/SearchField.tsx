@@ -1,7 +1,9 @@
+import { SearchIcon } from "@chakra-ui/icons";
 import {
   CloseButton,
   Input,
   InputGroup,
+  InputLeftElement,
   InputRightElement,
   Kbd,
   Tooltip,
@@ -23,6 +25,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
 
   return (
     <InputGroup>
+      <InputLeftElement pointerEvents="none" children={<SearchIcon />} />
       <Input
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}

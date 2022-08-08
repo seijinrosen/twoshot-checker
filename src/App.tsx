@@ -1,5 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import { useState } from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Tags from "./components/Tags";
 
@@ -12,6 +13,7 @@ function App() {
       <Container as="main" maxW="container.md" mt={4}>
         <Tags searchQuery={searchQuery} />
       </Container>
+      <Footer />
     </>
   );
 }

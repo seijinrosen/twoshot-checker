@@ -1,22 +1,9 @@
-import {
-  Button,
-  Link,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  Text,
-  useDisclosure,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Button, Text, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
-import rawJson from "../assets/raw.json";
 import tagsJson from "../assets/tags.json";
 import { shuffle } from "../util";
+import MyModal from "./MyModal";
 
 const colored = (text: string, searchQuery: string) => {
   const i = text.toLowerCase().indexOf(searchQuery.toLowerCase());
@@ -66,29 +53,7 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
             : name}
         </Button>
       ))}
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            {selectedIds.map((id, i) => (
-              <Link
-                key={i}
-                href={`https://youtu.be/${rawJson[id].videoId}`}
-                isExternal
-              >
-                {rawJson[id].title}
-              </Link>
-            ))}
-          </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+      <MyModal isOpen={isOpen} onClose={onClose} selectedIds={selectedIds} />
     </div>
   );
 };

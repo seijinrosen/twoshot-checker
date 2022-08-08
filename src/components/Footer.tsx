@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <VStack as="footer" spacing={4} my={12}>
+    <VStack as="footer" spacing={4} mt="auto" mb={12}>
       <Stack mt={4} direction="row" spacing={10}>
         <Link href="https://github.com/seijinrosen/twoshot-checker" isExternal>
           <FaGithub fontSize={30} />

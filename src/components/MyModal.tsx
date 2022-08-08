@@ -1,6 +1,7 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Button,
+  Highlight,
   Link,
   ListItem,
   Modal,
@@ -35,7 +36,17 @@ const MyModal = ({
           {selectedIds.map((id, i) => (
             <ListItem key={i}>
               <Link href={`https://youtu.be/${rawJson[id].videoId}`} isExternal>
-                {rawJson[id].title}
+                <Highlight
+                  query={name}
+                  styles={{
+                    px: 1,
+                    fontWeight: "bold",
+                    rounded: 5,
+                    bg: "orange.100",
+                  }}
+                >
+                  {rawJson[id].title}
+                </Highlight>
                 <ExternalLinkIcon mx="2px" color="green.500" />
               </Link>
             </ListItem>

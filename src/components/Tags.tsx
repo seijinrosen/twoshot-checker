@@ -42,6 +42,7 @@ const Tags = ({ searchQuery }: { searchQuery: string }) => {
           mr={1}
           mb={1}
           key={i}
+          rounded={10}
           onClick={() => {
             onOpen();
             setSelectedName(name);

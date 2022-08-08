@@ -31,12 +31,12 @@ const MyModal = ({
       <ModalHeader>{name}</ModalHeader>
       <ModalCloseButton />
       <ModalBody>
-        <UnorderedList>
+        <UnorderedList spacing={3}>
           {selectedIds.map((id, i) => (
             <ListItem key={i}>
               <Link href={`https://youtu.be/${rawJson[id].videoId}`} isExternal>
                 {rawJson[id].title}
-                <ExternalLinkIcon mx="2px" />
+                <ExternalLinkIcon mx="2px" color="green.500" />
               </Link>
             </ListItem>
           ))}

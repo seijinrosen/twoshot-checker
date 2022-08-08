@@ -6,11 +6,13 @@ import {
   IconButton,
   useColorMode,
   useColorModeValue,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { SearchFieldType } from "../types";
 import SearchField from "./SearchField";
 
 const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
+  const [isLargerThan600] = useMediaQuery("(min-width: 600px)");
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -27,7 +29,13 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       backdropFilter="saturate(180%) blur(5px)"
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Heading as="a" href="/" size="md" mr={1}>
+        <Heading
+          as="a"
+          href="/"
+          size="md"
+          mr={4}
+          whiteSpace={isLargerThan600 ? "nowrap" : "normal"}
+        >
           TWOSHOT CHECKER
         </Heading>
         <SearchField
@@ -38,7 +46,7 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
           onClick={toggleColorMode}
           aria-label="Toggle color mode"
           icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          ml={1}
+          ml={4}
         />
       </Flex>
     </Box>

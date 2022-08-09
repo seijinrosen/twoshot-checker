@@ -1,4 +1,4 @@
-import { Box, Button, Center, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Text, useDisclosure } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
 import topicsJson from "../assets/topics.json";
@@ -14,14 +14,14 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
   const filteredTags = allTags.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const [showAll, setShowAll] = useState(false);
+  const [showNum, setShowNum] = useState(100);
 
   return (
     <Box>
       <Text fontSize="sm" mb={2}>
         トークデッキ: {filteredTags.length.toLocaleString()} 枚
       </Text>
-      {filteredTags.slice(0, 100).map(({ name, mainIds }, i) => (
+      {filteredTags.slice(0, showNum).map(({ name, mainIds }, i) => (
         <TagButton
           key={i}
           tagName={name}
@@ -32,27 +32,17 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
           onOpen={onOpen}
         />
       ))}
-      {showAll ? (
-        filteredTags
-          .slice(100)
-          .map(({ name, mainIds }, i) => (
-            <TagButton
-              key={i}
-              tagName={name}
-              setTagName={setSelectedTagName}
-              mainIds={mainIds}
-              setMainIds={setSelectedMainIds}
-              searchQuery={searchQuery}
-              onOpen={onOpen}
-            />
-          ))
-      ) : (
-        <Center mt={10}>
-          <Button textAlign="center" onClick={() => setShowAll(true)}>
-            Show All
+      <Box my={10} textAlign="center">
+        <Text mb={1}>
+          {Math.min(showNum, filteredTags.length).toLocaleString()} /{" "}
+          {filteredTags.length.toLocaleString()}
+        </Text>
+        {showNum < filteredTags.length && (
+          <Button textAlign="center" onClick={() => setShowNum(showNum + 100)}>
+            Show more
           </Button>
-        </Center>
-      )}
+        )}
+      </Box>
       <MyModal
         isOpen={isOpen}
         onClose={onClose}

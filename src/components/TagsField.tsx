@@ -1,4 +1,12 @@
-import { Box, Button, Text, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Stat,
+  StatLabel,
+  StatNumber,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
 import topicsJson from "../assets/topics.json";
@@ -18,9 +26,10 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
 
   return (
     <Box>
-      <Text fontSize="sm" mb={2}>
-        トークデッキ: {filteredTags.length.toLocaleString()} 枚
-      </Text>
+      <Stat textAlign="center" mb={3}>
+        <StatLabel>トークデッキ</StatLabel>
+        <StatNumber>{filteredTags.length.toLocaleString()} 枚</StatNumber>
+      </Stat>
       {filteredTags.slice(0, showNum).map(({ name, mainIds }, i) => (
         <TagButton
           key={i}

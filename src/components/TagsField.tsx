@@ -1,65 +1,40 @@
-import { Button, Text, useDisclosure, useMediaQuery } from "@chakra-ui/react";
+import { Text, useDisclosure } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
 import topicsJson from "../assets/topics.json";
 import { shuffle } from "../util";
 import MyModal from "./MyModal";
-
-const colored = (text: string, searchQuery: string) => {
-  const i = text.toLowerCase().indexOf(searchQuery.toLowerCase());
-
-  return (
-    <>
-      {text.slice(0, i)}
-      <Text as="mark">{text.slice(i, i + searchQuery.length)}</Text>
-      {text.slice(i + searchQuery.length)}
-    </>
-  );
-};
-
-const shorten = (text: string) => {
-  return 25 < text.length ? text.slice(0, 25) + "..." : text;
-};
+import TagButton from "./TagButton";
 
 const TagsField = ({ searchQuery }: { searchQuery: string }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedName, setSelectedName] = useState("");
+  const [selectedTagName, setSelectedTagName] = useState("");
   const [selectedMainIds, setSelectedMainIds] = useState<number[]>([]);
-  const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
-  const [onesAndTopics] = useState(shuffle(onesJson.concat(topicsJson)));
-  const filtered = onesAndTopics.filter(({ name }) =>
+  const [allTags] = useState(shuffle(onesJson.concat(topicsJson)));
+  const filteredTags = allTags.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
     <div>
       <Text fontSize="sm" mb={2}>
-        トークデッキ: {filtered.length.toLocaleString()} 枚
+        トークデッキ: {filteredTags.length.toLocaleString()} 枚
       </Text>
-      {filtered.map(({ name, mainIds }, i) => (
-        <Button
-          size="xs"
-          mr={1}
-          mb={1}
+      {filteredTags.map(({ name, mainIds }, i) => (
+        <TagButton
           key={i}
-          rounded={10}
-          onClick={() => {
-            onOpen();
-            setSelectedName(name);
-            setSelectedMainIds(mainIds);
-          }}
-        >
-          {searchQuery
-            ? colored(name, searchQuery)
-            : isSmallerThan800
-            ? shorten(name)
-            : name}
-        </Button>
+          tagName={name}
+          setTagName={setSelectedTagName}
+          mainIds={mainIds}
+          setMainIds={setSelectedMainIds}
+          searchQuery={searchQuery}
+          onOpen={onOpen}
+        />
       ))}
       <MyModal
         isOpen={isOpen}
         onClose={onClose}
-        tagName={selectedName}
+        tagName={selectedTagName}
         mainIds={selectedMainIds}
       />
     </div>

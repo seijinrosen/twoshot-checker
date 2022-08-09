@@ -1,11 +1,13 @@
 import {
   Box,
   Button,
+  Stack,
   Stat,
   StatLabel,
   StatNumber,
   Text,
   useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
@@ -28,7 +30,12 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
     <Box>
       <Stat textAlign="center" mb={3}>
         <StatLabel>トークデッキ</StatLabel>
-        <StatNumber>{filteredTags.length.toLocaleString()} 枚</StatNumber>
+        <StatNumber>
+          {filteredTags.length.toLocaleString()}{" "}
+          <Box as="span" fontSize="sm">
+            枚
+          </Box>
+        </StatNumber>
       </Stat>
       {filteredTags.slice(0, showNum).map(({ name, mainIds }, i) => (
         <TagButton
@@ -41,17 +48,22 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
           onOpen={onOpen}
         />
       ))}
-      <Box my={10} textAlign="center">
-        <Text mb={1}>
+      <VStack spacing={3} my={8}>
+        <Text>
           {Math.min(showNum, filteredTags.length).toLocaleString()} /{" "}
           {filteredTags.length.toLocaleString()}
         </Text>
         {showNum < filteredTags.length && (
-          <Button textAlign="center" onClick={() => setShowNum(showNum + 100)}>
-            Show more
-          </Button>
+          <Stack direction="row" spacing={2}>
+            <Button w={120} onClick={() => setShowNum(showNum + 200)}>
+              Show +200
+            </Button>
+            <Button w={120} onClick={() => setShowNum(filteredTags.length)}>
+              Show All
+            </Button>
+          </Stack>
         )}
-      </Box>
+      </VStack>
       <MyModal
         isOpen={isOpen}
         onClose={onClose}

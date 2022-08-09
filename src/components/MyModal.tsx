@@ -22,7 +22,7 @@ const MyModal = ({
   tagName: string;
   mainIds: number[];
 }) => (
-  <Modal isOpen={isOpen} onClose={onClose}>
+  <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
     <ModalOverlay />
     <ModalContent>
       <ModalHeader>{tagName}</ModalHeader>

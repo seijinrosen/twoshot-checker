@@ -13,7 +13,16 @@ const ModalListItem = ({
 
   return (
     <ListItem>
-      <LinkBox as="article" p="5" boxShadow="2xl" rounded="md">
+      <LinkBox
+        as="article"
+        p="5"
+        boxShadow="2xl"
+        rounded="md"
+        _hover={{
+          transform: "translateY(-1px)",
+          boxShadow: "xl",
+        }}
+      >
         <LinkOverlay href={`https://youtu.be/${videoId}`} isExternal>
           <Highlight
             query={tagName}

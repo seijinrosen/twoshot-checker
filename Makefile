@@ -1,6 +1,9 @@
 dev:
 	pnpm run dev
 
+switch:
+	git switch --create develop
+
 update:
 	pnpm update
 

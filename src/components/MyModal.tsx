@@ -1,5 +1,6 @@
 import {
   Button,
+  Highlight,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -25,10 +26,21 @@ const MyModal = ({
   <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
     <ModalOverlay />
     <ModalContent>
-      <ModalHeader>{tagName}</ModalHeader>
+      <ModalHeader>
+        <Highlight
+          query={tagName}
+          styles={{
+            px: 1,
+            rounded: 5,
+            bg: "orange.100",
+          }}
+        >
+          {tagName}
+        </Highlight>
+      </ModalHeader>
       <ModalCloseButton />
       <ModalBody>
-        <UnorderedList spacing={3} listStyleType="none" m={0}>
+        <UnorderedList spacing={4} listStyleType="none" m={0}>
           {mainIds.map((mainId) => (
             <ModalListItem key={mainId} mainId={mainId} tagName={tagName} />
           ))}

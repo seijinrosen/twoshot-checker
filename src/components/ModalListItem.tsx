@@ -13,7 +13,7 @@ const ModalListItem = ({
 
   return (
     <ListItem>
-      <LinkBox as="article" p="5" borderWidth="1px" rounded="md">
+      <LinkBox as="article" p="5" boxShadow="2xl" rounded="md">
         <LinkOverlay href={`https://youtu.be/${videoId}`} isExternal>
           <Highlight
             query={tagName}

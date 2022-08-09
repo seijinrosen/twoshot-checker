@@ -1,10 +1,5 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Button,
-  Highlight,
-  LinkBox,
-  LinkOverlay,
-  ListItem,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -14,39 +9,7 @@ import {
   ModalOverlay,
   UnorderedList,
 } from "@chakra-ui/react";
-import rawJson from "../assets/raw.json";
-
-const ModalListItem = ({
-  mainId,
-  tagName,
-}: {
-  mainId: number;
-  tagName: string;
-}) => {
-  const { title, videoId } = rawJson[mainId];
-
-  return (
-    <ListItem>
-      <LinkBox as="article" p="5" borderWidth="1px" rounded="md">
-        <LinkOverlay href={`https://youtu.be/${videoId}`} isExternal>
-          <Highlight
-            query={tagName}
-            styles={{
-              px: 1,
-              mx: 1,
-              fontWeight: "bold",
-              rounded: 5,
-              bg: "orange.100",
-            }}
-          >
-            {title}
-          </Highlight>
-          <ExternalLinkIcon mx="2px" color="green.500" />
-        </LinkOverlay>
-      </LinkBox>
-    </ListItem>
-  );
-};
+import ModalListItem from "./ModalListItem";
 
 const MyModal = ({
   isOpen,

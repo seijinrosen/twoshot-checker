@@ -1,4 +1,4 @@
-import { Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Text, useDisclosure } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "../assets/ones.json";
 import topicsJson from "../assets/topics.json";
@@ -16,7 +16,7 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
   );
 
   return (
-    <div>
+    <Box>
       <Text fontSize="sm" mb={2}>
         トークデッキ: {filteredTags.length.toLocaleString()} 枚
       </Text>
@@ -37,7 +37,7 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
         tagName={selectedTagName}
         mainIds={selectedMainIds}
       />
-    </div>
+    </Box>
   );
 };
 

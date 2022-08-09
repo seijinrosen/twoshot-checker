@@ -14,7 +14,7 @@ const TagsField = ({ searchQuery }: { searchQuery: string }) => {
   const filteredTags = allTags.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const [showNum, setShowNum] = useState(100);
+  const [showNum, setShowNum] = useState(200);
 
   return (
     <Box>

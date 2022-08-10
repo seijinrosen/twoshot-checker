@@ -14,10 +14,15 @@ import {
   OrderedList,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useState } from "react";
+import { HiOutlineSwitchVertical } from "react-icons/hi";
 import rawJson from "../assets/raw.json";
+
+const reversedAllTwoshots = rawJson.slice().reverse();
 
 const MyDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [reversed, setReversed] = useState(false);
 
   return (
     <>
@@ -32,19 +37,31 @@ const MyDrawer = () => {
           <DrawerCloseButton />
           <DrawerHeader>ALL TWOSHOTs</DrawerHeader>
           <DrawerBody>
-            <OrderedList start={0}>
-              {rawJson.map(({ title, videoId }, i) => (
-                <ListItem key={i}>
-                  <Link href={`https://youtu.be/${videoId}`} isExternal>
-                    {title}
-                    <ExternalLinkIcon color="green.500" />
-                  </Link>
-                </ListItem>
-              ))}
+            <OrderedList
+              start={reversed ? rawJson.length - 1 : 0}
+              reversed={reversed}
+            >
+              {(reversed ? reversedAllTwoshots : rawJson).map(
+                ({ title, videoId }, i) => (
+                  <ListItem key={i}>
+                    <Link href={`https://youtu.be/${videoId}`} isExternal>
+                      {title}
+                      <ExternalLinkIcon color="green.500" />
+                    </Link>
+                  </ListItem>
+                )
+              )}
             </OrderedList>
           </DrawerBody>
           <DrawerFooter>
-            <Button onClick={onClose}>Close</Button>
+            <IconButton
+              aria-label="Reverse"
+              icon={<HiOutlineSwitchVertical />}
+              onClick={() => setReversed(!reversed)}
+            />
+            <Button ml={1} onClick={onClose}>
+              Close
+            </Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

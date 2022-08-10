@@ -1176,5 +1176,15 @@
   { "name": "バズりツイート", "mainIds": [162] },
   { "name": "女叩き", "mainIds": [162] },
   { "name": "浪費家", "mainIds": [162] },
-  { "name": "肥満", "mainIds": [162] }
+  { "name": "肥満", "mainIds": [162] },
+  { "name": "オゴリの空気", "mainIds": [163] },
+  { "name": "ゴミ回収拒否", "mainIds": [163] },
+  { "name": "半額惣菜", "mainIds": [163] },
+  { "name": "国民の成熟", "mainIds": [163] },
+  { "name": "夏をどうお過ごし", "mainIds": [163] },
+  { "name": "好きな教科", "mainIds": [163] },
+  { "name": "弾き語り", "mainIds": [163] },
+  { "name": "懐かしの味", "mainIds": [163] },
+  { "name": "親子丼", "mainIds": [163] },
+  { "name": "評判より好きなゲーム", "mainIds": [163] }
 ]

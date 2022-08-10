@@ -33,6 +33,7 @@ const MyModal = ({
             px: 1,
             rounded: 5,
             bg: "orange.100",
+            whiteSpace: "normal",
           }}
         >
           {tagName}

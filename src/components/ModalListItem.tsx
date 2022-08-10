@@ -32,6 +32,7 @@ const ModalListItem = ({
               fontWeight: "bold",
               rounded: 5,
               bg: "orange.100",
+              whiteSpace: tagName.length <= 20 ? "nowrap" : "normal",
             }}
           >
             {title}

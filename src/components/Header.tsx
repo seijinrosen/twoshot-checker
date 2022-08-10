@@ -9,6 +9,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { SearchFieldType } from "../types";
+import MyDrawer from "./MyDrawer";
 import SearchField from "./SearchField";
 
 const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
@@ -42,11 +43,13 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
         />
+        <Box mx={1}>
+          <MyDrawer />
+        </Box>
         <IconButton
           onClick={toggleColorMode}
           aria-label="Toggle color mode"
           icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          ml={4}
         />
       </Flex>
     </Box>

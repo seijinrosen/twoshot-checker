@@ -31,13 +31,14 @@ const MyDrawer = () => {
         icon={<HamburgerIcon />}
         onClick={onOpen}
       />
-      <Drawer isOpen={isOpen} onClose={onClose}>
+      <Drawer isOpen={isOpen} onClose={onClose} size="lg">
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader>ALL TWOSHOTs</DrawerHeader>
           <DrawerBody>
             <OrderedList
+              spacing={4}
               start={reversed ? rawJson.length - 1 : 0}
               reversed={reversed}
             >

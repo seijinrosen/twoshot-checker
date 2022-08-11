@@ -1,33 +1,13 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useState } from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import onesJson from "./assets/ones.json";
 import topicsJson from "./assets/topics.json";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import TagsField from "./components/TagsField";
-import { TagType } from "./types";
+import AllTwoshotsPage from "./pages/AllTwoshotsPage";
+import TopPage from "./pages/TopPage";
 import { shuffle } from "./util";
-
-const TopPage = ({
-  searchQuery,
-  allTags,
-}: {
-  searchQuery: string;
-  allTags: TagType[];
-}) => (
-  <Container as="main" maxW="container.md" mt={4}>
-    <Link to="/all-twoshots">ALL TWOSHOTs</Link>
-    <TagsField searchQuery={searchQuery} allTags={allTags} />
-  </Container>
-);
-
-const AllTwoshotsPage = () => (
-  <>
-    <Heading>ALL TWOSHOTs</Heading>
-    <Link to="/">トップページ</Link>
-  </>
-);
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");

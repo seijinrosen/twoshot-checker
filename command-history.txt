@@ -18,3 +18,4 @@ pnpm add @chakra-ui/react @emotion/react@\^11 @emotion/styled@\^11 framer-motion
 pnpm add react-hotkeys-hook
 pnpm add @chakra-ui/icons
 pnpm add react-icons
+pnpm add react-router-dom@6

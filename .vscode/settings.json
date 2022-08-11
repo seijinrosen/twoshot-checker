@@ -9,5 +9,6 @@
     "pnpm-lock.yaml",
     "raw.json",
     "topics.json"
-  ]
+  ],
+  "cSpell.words": ["twoshots"]
 }

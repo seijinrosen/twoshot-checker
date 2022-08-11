@@ -10,17 +10,20 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import onesJson from "../assets/ones.json";
-import topicsJson from "../assets/topics.json";
-import { shuffle } from "../util";
+import { TagType } from "../types";
 import MyModal from "./MyModal";
 import TagButton from "./TagButton";
 
-const TagsField = ({ searchQuery }: { searchQuery: string }) => {
+const TagsField = ({
+  searchQuery,
+  allTags,
+}: {
+  searchQuery: string;
+  allTags: TagType[];
+}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedTagName, setSelectedTagName] = useState("");
   const [selectedMainIds, setSelectedMainIds] = useState<number[]>([]);
-  const [allTags] = useState(shuffle(onesJson.concat(topicsJson)));
   const filteredTags = allTags.filter(({ name }) =>
     name.toLowerCase().includes(searchQuery.toLowerCase())
   );

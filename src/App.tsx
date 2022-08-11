@@ -15,8 +15,8 @@ function App() {
 
   return (
     <Box display="flex" flexDirection="column" minH="100vh">
-      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <BrowserRouter>
+        <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         <Routes>
           <Route
             path="/"

@@ -1,15 +1,15 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
+  Button,
+  Center,
   Container,
   Heading,
-  IconButton,
   Link,
   ListItem,
   OrderedList,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiOutlineSwitchVertical } from "react-icons/hi";
-import { Link as RouterLink } from "react-router-dom";
 import rawJson from "../assets/raw.json";
 
 const reversedAllTwoshots = rawJson.slice().reverse();
@@ -18,15 +18,20 @@ const AllTwoshotsPage = () => {
   const [reversed, setReversed] = useState(false);
 
   return (
-    <Container as="main" maxW="container.md" mt={4}>
-      <Heading>ALL TWOSHOTs</Heading>
-      <RouterLink to="/">トップページ</RouterLink>
-      <IconButton
-        aria-label="Reverse"
-        icon={<HiOutlineSwitchVertical />}
-        onClick={() => setReversed(!reversed)}
-      />
+    <Container as="main" maxW="container.md" my={4}>
+      <Heading textAlign="center">ALL TWOSHOTs</Heading>
+      <Center my={6}>
+        <Button
+          leftIcon={<HiOutlineSwitchVertical />}
+          colorScheme="teal"
+          variant="outline"
+          onClick={() => setReversed(!reversed)}
+        >
+          Reverse
+        </Button>
+      </Center>
       <OrderedList
+        ml={8}
         spacing={4}
         start={reversed ? rawJson.length - 1 : 0}
         reversed={reversed}

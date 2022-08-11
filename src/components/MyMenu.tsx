@@ -16,6 +16,9 @@ const MyMenu = () => {
         <MenuItem>
           <Link to="/all-twoshots">ALL TWOSHOTs</Link>
         </MenuItem>
+        <MenuItem>
+          <Link to="/">Top page</Link>
+        </MenuItem>
       </MenuList>
     </Menu>
   );

@@ -10,11 +10,11 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import MyModal from "../components/MyModal";
+import TagButton from "../components/TagButton";
 import { TagType } from "../types";
-import MyModal from "./MyModal";
-import TagButton from "./TagButton";
 
-const TagsField = ({
+const TalkDeckPage = ({
   searchQuery,
   allTags,
 }: {
@@ -77,4 +77,4 @@ const TagsField = ({
   );
 };
 
-export default TagsField;
+export default TalkDeckPage;

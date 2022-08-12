@@ -1,12 +1,19 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+} from "@chakra-ui/react";
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import onesJson from "./assets/ones.json";
 import topicsJson from "./assets/topics.json";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import AllTwoshotsPage from "./pages/AllTwoshotsPage";
-import TopPage from "./pages/TopPage";
+import TalkDeckPage from "./pages/TalkDeckPage";
 import { shuffle } from "./util";
 
 function App() {
@@ -15,19 +22,23 @@ function App() {
 
   return (
     <Box display="flex" flexDirection="column" minH="100vh">
-      <BrowserRouter>
-        <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-        <Routes>
-          <Route
-            path="/"
-            element={<TopPage searchQuery={searchQuery} allTags={allTags} />}
-          />
-          <Route
-            path="/all-twoshots"
-            element={<AllTwoshotsPage searchQuery={searchQuery} />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <Container as="main" maxW="container.md" mb={5}>
+        <Tabs isFitted variant="enclosed">
+          <TabList mb={5}>
+            <Tab>Talk Deck</Tab>
+            <Tab>ALL TWOSHOTs</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel p={0}>
+              <TalkDeckPage searchQuery={searchQuery} allTags={allTags} />
+            </TabPanel>
+            <TabPanel p={0}>
+              <AllTwoshotsPage searchQuery={searchQuery} />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Container>
       <Footer />
     </Box>
   );

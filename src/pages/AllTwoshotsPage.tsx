@@ -2,7 +2,6 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Button,
   Center,
-  Container,
   Flex,
   Heading,
   Highlight,
@@ -22,7 +21,7 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
   );
 
   return (
-    <Container as="main" maxW="container.md" my={4}>
+    <>
       <Heading textAlign="center">ALL TWOSHOTs</Heading>
       <Center mt={4}>
         <Button
@@ -63,7 +62,7 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
           )
         )}
       </OrderedList>
-    </Container>
+    </>
   );
 };
 

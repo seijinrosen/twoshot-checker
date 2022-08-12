@@ -19,3 +19,4 @@ pnpm add react-hotkeys-hook
 pnpm add @chakra-ui/icons
 pnpm add react-icons
 pnpm add react-router-dom@6
+pnpm remove react-router-dom

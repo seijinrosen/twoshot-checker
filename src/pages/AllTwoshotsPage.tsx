@@ -3,11 +3,13 @@ import {
   Button,
   Center,
   Container,
+  Flex,
   Heading,
   Highlight,
   Link,
   ListItem,
   OrderedList,
+  Spacer,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiOutlineSwitchVertical } from "react-icons/hi";
@@ -22,8 +24,7 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
   return (
     <Container as="main" maxW="container.md" my={4}>
       <Heading textAlign="center">ALL TWOSHOTs</Heading>
-      {filteredTwoshots.length}
-      <Center my={6}>
+      <Center mt={4}>
         <Button
           leftIcon={<HiOutlineSwitchVertical />}
           colorScheme="teal"
@@ -33,6 +34,10 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
           Reverse
         </Button>
       </Center>
+      <Flex mb={3}>
+        <Spacer />
+        {filteredTwoshots.length.toLocaleString()} 件
+      </Flex>
       <OrderedList ml={8} spacing={4}>
         {(reversed ? filteredTwoshots.slice().reverse() : filteredTwoshots).map(
           ({ id, title, videoId }) => (

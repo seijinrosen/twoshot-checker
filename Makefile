@@ -4,6 +4,13 @@ dev:
 switch:
 	git switch --create develop
 
+after-develop-merged:
+	git switch main
+	git pull
+	git fetch --prune
+	git branch --delete develop
+	make switch
+
 update:
 	pnpm update
 

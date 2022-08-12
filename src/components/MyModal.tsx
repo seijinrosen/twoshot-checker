@@ -10,6 +10,8 @@ import {
   ModalOverlay,
   UnorderedList,
 } from "@chakra-ui/react";
+import { useState } from "react";
+import { HiOutlineSwitchVertical } from "react-icons/hi";
 import ModalListItem from "./ModalListItem";
 
 const MyModal = ({
@@ -22,38 +24,54 @@ const MyModal = ({
   onClose: () => void;
   tagName: string;
   mainIds: number[];
-}) => (
-  <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
-    <ModalOverlay />
-    <ModalContent>
-      <ModalHeader>
-        <Highlight
-          query={tagName}
-          styles={{
-            px: 1,
-            rounded: 5,
-            bg: "orange.100",
-            whiteSpace: "normal",
-          }}
-        >
-          {tagName}
-        </Highlight>
-      </ModalHeader>
-      <ModalCloseButton />
-      <ModalBody>
-        <UnorderedList spacing={4} listStyleType="none" m={0}>
-          {mainIds.map((mainId) => (
-            <ModalListItem key={mainId} mainId={mainId} tagName={tagName} />
-          ))}
-        </UnorderedList>
-      </ModalBody>
-      <ModalFooter>
-        <Button colorScheme="blue" onClick={onClose}>
-          Close
-        </Button>
-      </ModalFooter>
-    </ModalContent>
-  </Modal>
-);
+}) => {
+  const [reversed, setReversed] = useState(false);
+
+  return (
+    <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
+      <ModalOverlay />
+      <ModalContent>
+        <ModalHeader mr={3}>
+          <Highlight
+            query={tagName}
+            styles={{
+              px: 1,
+              rounded: 5,
+              bg: "orange.100",
+              whiteSpace: "normal",
+            }}
+          >
+            {tagName}
+          </Highlight>{" "}
+          ({mainIds.length.toLocaleString()} 件)
+        </ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
+          <UnorderedList spacing={4} listStyleType="none" m={0}>
+            {(reversed ? mainIds.slice().reverse() : mainIds).map((mainId) => (
+              <ModalListItem key={mainId} mainId={mainId} tagName={tagName} />
+            ))}
+          </UnorderedList>
+        </ModalBody>
+        <ModalFooter>
+          {2 <= mainIds.length && (
+            <Button
+              mr={3}
+              leftIcon={<HiOutlineSwitchVertical />}
+              colorScheme="teal"
+              variant={reversed ? "solid" : "outline"}
+              onClick={() => setReversed(!reversed)}
+            >
+              Reverse
+            </Button>
+          )}
+          <Button colorScheme="blue" onClick={onClose}>
+            Close
+          </Button>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
+  );
+};
 
 export default MyModal;

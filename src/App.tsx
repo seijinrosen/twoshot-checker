@@ -22,7 +22,10 @@ function App() {
             path="/"
             element={<TopPage searchQuery={searchQuery} allTags={allTags} />}
           />
-          <Route path="/all-twoshots" element={<AllTwoshotsPage />} />
+          <Route
+            path="/all-twoshots"
+            element={<AllTwoshotsPage searchQuery={searchQuery} />}
+          />
         </Routes>
       </BrowserRouter>
       <Footer />

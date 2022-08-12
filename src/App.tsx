@@ -12,8 +12,8 @@ import onesJson from "./assets/ones.json";
 import topicsJson from "./assets/topics.json";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import TagsField from "./components/TagsField";
 import AllTwoshotsPage from "./pages/AllTwoshotsPage";
-import TopPage from "./pages/TopPage";
 import { shuffle } from "./util";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           </TabList>
           <TabPanels>
             <TabPanel p={0}>
-              <TopPage searchQuery={searchQuery} allTags={allTags} />
+              <TagsField searchQuery={searchQuery} allTags={allTags} />
             </TabPanel>
             <TabPanel p={0}>
               <AllTwoshotsPage searchQuery={searchQuery} />

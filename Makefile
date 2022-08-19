@@ -6,8 +6,7 @@ switch:
 
 after-develop-merged:
 	git switch main
-	git pull
-	git fetch --prune
+	git pull --prune
 	git branch --delete develop
 	make switch
 

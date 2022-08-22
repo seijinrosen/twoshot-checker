@@ -492,7 +492,7 @@
   { "name": "夫婦別姓", "mainIds": [88] },
   { "name": "オリパラ開催反対と選手応援は矛盾？", "mainIds": [89] },
   { "name": "チョップドサラダ美味い", "mainIds": [89] },
-  { "name": "マンガ", "mainIds": [89, 103, 137] },
+  { "name": "マンガ", "mainIds": [89, 103, 137, 166] },
   { "name": "両津勘吉とフェチ", "mainIds": [89] },
   { "name": "口論中の涙", "mainIds": [89] },
   { "name": "性格診断テスト", "mainIds": [89] },
@@ -1200,5 +1200,15 @@
   { "name": "育児たいへん", "mainIds": [165] },
   { "name": "身体の不調", "mainIds": [165] },
   { "name": "音の色", "mainIds": [165] },
-  { "name": "音楽理論談義", "mainIds": [165] }
+  { "name": "音楽理論談義", "mainIds": [165] },
+  { "name": "NOSH", "mainIds": [166] },
+  { "name": "コミケ創作中", "mainIds": [166] },
+  { "name": "タワマンに住む", "mainIds": [166] },
+  { "name": "占い", "mainIds": [166] },
+  { "name": "無敵の人対策", "mainIds": [166] },
+  { "name": "知識ガバ注意逃げ", "mainIds": [166] },
+  { "name": "社内昇進試験", "mainIds": [166] },
+  { "name": "続・食べ残し問題", "mainIds": [166] },
+  { "name": "銀行利子", "mainIds": [166] },
+  { "name": "銭湯で痴漢", "mainIds": [166] }
 ]

@@ -369,7 +369,7 @@
   { "name": "おもちゃメーカーの仕事事情", "mainIds": [73] },
   { "name": "オススメ映画", "mainIds": [73] },
   { "name": "パチスロ", "mainIds": [73] },
-  { "name": "メガネ", "mainIds": [73] },
+  { "name": "メガネ", "mainIds": [73, 167] },
   { "name": "仕事中の息抜き", "mainIds": [73] },
   { "name": "天草がよく行くやべえコンビニ", "mainIds": [73] },
   { "name": "天草のお子", "mainIds": [73] },
@@ -1210,5 +1210,13 @@
   { "name": "社内昇進試験", "mainIds": [166] },
   { "name": "続・食べ残し問題", "mainIds": [166] },
   { "name": "銀行利子", "mainIds": [166] },
-  { "name": "銭湯で痴漢", "mainIds": [166] }
+  { "name": "銭湯で痴漢", "mainIds": [166] },
+  { "name": "G", "mainIds": [167] },
+  { "name": "MTGアリーナ", "mainIds": [167] },
+  { "name": "オシャレに目覚めた", "mainIds": [167] },
+  { "name": "フィクション内の通貨", "mainIds": [167] },
+  { "name": "マンガに目覚めた", "mainIds": [167] },
+  { "name": "坊主にした", "mainIds": [167] },
+  { "name": "興奮するコウノスケ", "mainIds": [167] },
+  { "name": "裸で抗議活動", "mainIds": [167] }
 ]

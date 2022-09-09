@@ -6,6 +6,9 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
+import gtfu
+import pyperclip
+
 
 @dataclass
 class Item:
@@ -18,7 +21,8 @@ raw_json_str = Path("src/assets/raw.json").read_text()
 items = [Item(**d) for d in json.loads(raw_json_str)]
 
 new_videoId = input("? videoId: ")
-new_title = input("? title: ")
+url = "https://www.youtube.com/watch?v=" + new_videoId
+new_title = gtfu.get(url).removesuffix(" - YouTube")
 items.append(Item(videoId=new_videoId, title=new_title))
 
 raw_list: list[dict[str, str | int]] = []
@@ -47,3 +51,8 @@ topics_list = [{"name": k, "mainIds": v} for k, v in topics_dict.items()]
 Path("src/assets/ones.json").write_text(json.dumps(ones_list, ensure_ascii=False))
 Path("src/assets/raw.json").write_text(json.dumps(raw_list, ensure_ascii=False))
 Path("src/assets/topics.json").write_text(json.dumps(topics_list, ensure_ascii=False))
+
+text = f"Add TWOSHOT {items[-1].id}"
+pyperclip.copy(text)  # type: ignore
+print("クリップボードにコミットメッセージをコピーしました:")
+print(text)

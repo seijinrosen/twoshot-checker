@@ -89,7 +89,7 @@
   { "name": "髪型で遊ぶ", "mainIds": [24] },
   { "name": "Wikipediaで死刑事件を読んだ", "mainIds": [25] },
   { "name": "おいしい食べ物", "mainIds": [25, 35] },
-  { "name": "ゲーム", "mainIds": [25, 150] },
+  { "name": "ゲーム", "mainIds": [25, 150, 169] },
   { "name": "服を買いに行く服がない", "mainIds": [25] },
   { "name": "M-1感想", "mainIds": [26, 28, 118] },
   { "name": "息子さんの習い事", "mainIds": [26] },
@@ -145,7 +145,7 @@
   { "name": "コロナ禍を憂う", "mainIds": [39] },
   { "name": "バズりへの希求", "mainIds": [39] },
   { "name": "ブラックジャックによろしく", "mainIds": [39] },
-  { "name": "仕事", "mainIds": [39] },
+  { "name": "仕事", "mainIds": [39, 169] },
   { "name": "創作会議", "mainIds": [39] },
   { "name": "現実の天才", "mainIds": [39] },
   { "name": "kenshiという理不尽ゲー", "mainIds": [40] },
@@ -1230,5 +1230,14 @@
   { "name": "気になる筋書き", "mainIds": [168] },
   { "name": "無職生活", "mainIds": [168] },
   { "name": "猫の幸せ", "mainIds": [168] },
-  { "name": "苦味", "mainIds": [168] }
+  { "name": "苦味", "mainIds": [168] },
+  { "name": "mimic炎上", "mainIds": [169] },
+  { "name": "ウェブトゥーン", "mainIds": [169] },
+  { "name": "ラジオテコ入れ", "mainIds": [169] },
+  { "name": "婚活が進展？", "mainIds": [169] },
+  { "name": "必見の著者近影", "mainIds": [169] },
+  { "name": "成功への道", "mainIds": [169] },
+  { "name": "断トツって何だよ", "mainIds": [169] },
+  { "name": "痛風対策", "mainIds": [169] },
+  { "name": "集中力", "mainIds": [169] }
 ]

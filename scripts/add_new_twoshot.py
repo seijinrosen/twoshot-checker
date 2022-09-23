@@ -14,16 +14,17 @@ import pyperclip
 class Item:
     title: str
     videoId: str
-    id: int = 1000
+    id: int
 
 
 raw_json_str = Path("src/assets/raw.json").read_text()
 items = [Item(**d) for d in json.loads(raw_json_str)]
 
 new_videoId = input("? videoId: ")
+new_id = int(input("? id: "))
 url = "https://www.youtube.com/watch?v=" + new_videoId
 new_title = gtfu.get(url).removesuffix(" - YouTube")
-items.append(Item(videoId=new_videoId, title=new_title))
+items.append(Item(videoId=new_videoId, title=new_title, id=new_id))
 
 raw_list: list[dict[str, str | int]] = []
 ones_dict: defaultdict[str, list[int]] = defaultdict(list)
@@ -31,17 +32,17 @@ topics_dict: defaultdict[str, list[int]] = defaultdict(list)
 
 
 for item in items:
-    m = re.match(r"【作業用トーク】TWOSHOT #(\d+) (.+)【(.+)】", item.title)
+    if item.id <= 171:
+        m = re.match(r"【作業用トーク】TWOSHOT #\d+ (.+)【(.+)】", item.title)
+    else:
+        m = re.match(r"【作業用トーク】(.+)【(.+)】", item.title)
     assert m is not None
 
-    if item.id == 1000:
-        item.id = int(m.group(1))
-
-    ones_dict[m.group(3).removesuffix("さん")].append(item.id)
+    ones_dict[m.group(2).removesuffix("さん")].append(item.id)
 
     raw_list.append({"id": item.id, "title": item.title, "videoId": item.videoId})
 
-    for topic in sorted(set(m.group(2).split("/"))):
+    for topic in sorted(set(m.group(1).split("/"))):
         topics_dict[topic].append(item.id)
 
 

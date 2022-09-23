@@ -776,7 +776,7 @@
   { "name": "職場バレ", "mainIds": [120] },
   { "name": "胸焼け", "mainIds": [120] },
   { "name": "SNS乗っ取り", "mainIds": [121] },
-  { "name": "コーヒー", "mainIds": [121] },
+  { "name": "コーヒー", "mainIds": [121, 172] },
   { "name": "テレビ視聴", "mainIds": [121] },
   { "name": "ラブドール", "mainIds": [121] },
   { "name": "加害と被害", "mainIds": [121] },
@@ -837,7 +837,7 @@
   { "name": "RTA in Japan", "mainIds": [127] },
   { "name": "たぬかな炎上問題", "mainIds": [127] },
   { "name": "ウクライナ侵攻", "mainIds": [127] },
-  { "name": "仕事の愚痴", "mainIds": [127] },
+  { "name": "仕事の愚痴", "mainIds": [127, 172] },
   { "name": "伝染った口癖", "mainIds": [127] },
   { "name": "教科書を買った", "mainIds": [127] },
   { "name": "睡眠時無呼吸", "mainIds": [127] },
@@ -1259,5 +1259,13 @@
   { "name": "語源", "mainIds": [171] },
   { "name": "誤字指摘欲", "mainIds": [171] },
   { "name": "負けん気", "mainIds": [171] },
-  { "name": "香川県", "mainIds": [171] }
+  { "name": "香川県", "mainIds": [171] },
+  { "name": "イラストレーターへの評価が低い？", "mainIds": [172] },
+  { "name": "インテリア", "mainIds": [172] },
+  { "name": "ギャグマンガ", "mainIds": [172] },
+  { "name": "ユッケ食中毒と生つくね", "mainIds": [172] },
+  { "name": "作者への信頼", "mainIds": [172] },
+  { "name": "前者後者", "mainIds": [172] },
+  { "name": "創作家への夢を断念", "mainIds": [172] },
+  { "name": "誤変換", "mainIds": [172] }
 ]

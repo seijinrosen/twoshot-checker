@@ -1,5 +1,5 @@
 {
-  "cSpell.ignorePaths": [
+  "ignorePaths": [
     "package-lock.json",
     "node_modules",
     "vscode-extension",
@@ -10,5 +10,5 @@
     "raw.json",
     "topics.json"
   ],
-  "cSpell.words": ["twoshots"]
+  "words": ["twoshots"]
 }

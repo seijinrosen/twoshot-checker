@@ -21,10 +21,9 @@ raw_json_str = Path("src/assets/raw.json").read_text()
 items = [Item(**d) for d in json.loads(raw_json_str)]
 
 new_videoId = input("? videoId: ")
-new_id = int(input("? id: "))
 url = "https://www.youtube.com/watch?v=" + new_videoId
 new_title = gtfu.get(url).removesuffix(" - YouTube")
-items.append(Item(videoId=new_videoId, title=new_title, id=new_id))
+items.append(Item(videoId=new_videoId, title=new_title, id=len(items)))
 
 raw_list: list[dict[str, str | int]] = []
 ones_dict: defaultdict[str, list[int]] = defaultdict(list)

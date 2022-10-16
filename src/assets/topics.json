@@ -145,7 +145,7 @@
   { "name": "コロナ禍を憂う", "mainIds": [39] },
   { "name": "バズりへの希求", "mainIds": [39] },
   { "name": "ブラックジャックによろしく", "mainIds": [39] },
-  { "name": "仕事", "mainIds": [39, 169] },
+  { "name": "仕事", "mainIds": [39, 169, 177] },
   { "name": "創作会議", "mainIds": [39] },
   { "name": "現実の天才", "mainIds": [39] },
   { "name": "kenshiという理不尽ゲー", "mainIds": [40] },
@@ -889,7 +889,7 @@
   { "name": "贈り物", "mainIds": [133] },
   { "name": "騒音問題", "mainIds": [133] },
   { "name": "CPAP", "mainIds": [134] },
-  { "name": "TRPG", "mainIds": [134] },
+  { "name": "TRPG", "mainIds": [134, 177] },
   { "name": "ススル", "mainIds": [134] },
   { "name": "ストレッチロール", "mainIds": [134] },
   { "name": "メルカリ", "mainIds": [134] },
@@ -1300,5 +1300,14 @@
   { "name": "激甘お菓子", "mainIds": [176] },
   { "name": "猫を飼う準備中", "mainIds": [176] },
   { "name": "謝らない性格", "mainIds": [176] },
-  { "name": "香川オススメうどん屋", "mainIds": [176] }
+  { "name": "香川オススメうどん屋", "mainIds": [176] },
+  { "name": "AVスプラ問題", "mainIds": [177] },
+  { "name": "「ナンパされた」はワタシ可愛いアピ？", "mainIds": [177] },
+  { "name": "テレビvsネット", "mainIds": [177] },
+  { "name": "ラジオ婚活の進捗", "mainIds": [177] },
+  { "name": "好かれる新卒", "mainIds": [177] },
+  { "name": "最近の時事", "mainIds": [177] },
+  { "name": "漫画塾", "mainIds": [177] },
+  { "name": "迷惑乗車", "mainIds": [177] },
+  { "name": "麦わら海賊団の悪行", "mainIds": [177] }
 ]

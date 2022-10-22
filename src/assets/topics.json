@@ -1309,5 +1309,16 @@
   { "name": "最近の時事", "mainIds": [177] },
   { "name": "漫画塾", "mainIds": [177] },
   { "name": "迷惑乗車", "mainIds": [177] },
-  { "name": "麦わら海賊団の悪行", "mainIds": [177] }
+  { "name": "麦わら海賊団の悪行", "mainIds": [177] },
+  { "name": "iPad活用法", "mainIds": [178] },
+  { "name": "その男、凶暴につき", "mainIds": [178] },
+  { "name": "イボ痔", "mainIds": [178] },
+  { "name": "ガンダム", "mainIds": [178] },
+  { "name": "ジャージ購入", "mainIds": [178] },
+  { "name": "ポケモン新作", "mainIds": [178] },
+  { "name": "大人のおねしょ", "mainIds": [178] },
+  { "name": "将棋道場でバトル", "mainIds": [178] },
+  { "name": "明るいニュース", "mainIds": [178] },
+  { "name": "無駄を嫌う", "mainIds": [178] },
+  { "name": "絵描きAIとSF", "mainIds": [178] }
 ]

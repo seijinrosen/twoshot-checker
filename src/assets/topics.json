@@ -1320,5 +1320,18 @@
   { "name": "将棋道場でバトル", "mainIds": [178] },
   { "name": "明るいニュース", "mainIds": [178] },
   { "name": "無駄を嫌う", "mainIds": [178] },
-  { "name": "絵描きAIとSF", "mainIds": [178] }
+  { "name": "絵描きAIとSF", "mainIds": [178] },
+  { "name": "ことわざ", "mainIds": [179] },
+  { "name": "アンチSDGs", "mainIds": [179] },
+  { "name": "カレーラーメンレポ", "mainIds": [179] },
+  { "name": "スタバ", "mainIds": [179] },
+  { "name": "ネコ飼いました", "mainIds": [179] },
+  { "name": "ミス隠蔽", "mainIds": [179] },
+  { "name": "保険", "mainIds": [179] },
+  { "name": "健康診断結果", "mainIds": [179] },
+  { "name": "婚活全滅", "mainIds": [179] },
+  { "name": "子供のしつけ", "mainIds": [179] },
+  { "name": "海老、12月に東京旅行", "mainIds": [179] },
+  { "name": "米の期限", "mainIds": [179] },
+  { "name": "老舗", "mainIds": [179] }
 ]

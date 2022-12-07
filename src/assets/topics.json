@@ -34,7 +34,7 @@
   { "name": "鍋物の季節", "mainIds": [9] },
   { "name": "上京して居候", "mainIds": [10] },
   { "name": "涙もろい", "mainIds": [10] },
-  { "name": "近況", "mainIds": [10] },
+  { "name": "近況", "mainIds": [10, 181] },
   { "name": "離婚した話", "mainIds": [10] },
   { "name": "OPENRECに企画書出したら？", "mainIds": [11] },
   { "name": "よく聴く音楽", "mainIds": [11] },
@@ -1344,5 +1344,17 @@
   { "name": "洋子の話は信じるな", "mainIds": [180] },
   { "name": "浮気", "mainIds": [180] },
   { "name": "猟奇的なたけっち", "mainIds": [180] },
-  { "name": "眠れないたけっち", "mainIds": [180] }
+  { "name": "眠れないたけっち", "mainIds": [180] },
+  { "name": "PCを買いたい", "mainIds": [181] },
+  { "name": "SDGs", "mainIds": [181] },
+  { "name": "すき焼き", "mainIds": [181] },
+  { "name": "スタバの新作", "mainIds": [181] },
+  { "name": "パーカーで法事", "mainIds": [181] },
+  { "name": "ブルガダ症候群", "mainIds": [181] },
+  { "name": "リスナーと喋った", "mainIds": [181] },
+  { "name": "性欲が抜けた男性", "mainIds": [181] },
+  { "name": "椅子", "mainIds": [181] },
+  { "name": "水族館", "mainIds": [181] },
+  { "name": "焼肉きんぐ", "mainIds": [181] },
+  { "name": "記念日協会", "mainIds": [181] }
 ]

@@ -15,7 +15,7 @@ import { HiOutlineSwitchVertical } from "react-icons/hi";
 import rawJson from "../assets/raw.json";
 
 const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
-  const [reversed, setReversed] = useState(false);
+  const [reversed, setReversed] = useState(true);
   const filteredTwoshots = rawJson.filter(({ title }) =>
     title.toLowerCase().includes(searchQuery.toLowerCase())
   );

@@ -1318,7 +1318,7 @@
   { "name": "ポケモン新作", "mainIds": [178] },
   { "name": "大人のおねしょ", "mainIds": [178] },
   { "name": "将棋道場でバトル", "mainIds": [178] },
-  { "name": "明るいニュース", "mainIds": [178] },
+  { "name": "明るいニュース", "mainIds": [178, 182] },
   { "name": "無駄を嫌う", "mainIds": [178] },
   { "name": "絵描きAIとSF", "mainIds": [178] },
   { "name": "ことわざ", "mainIds": [179] },
@@ -1356,5 +1356,15 @@
   { "name": "椅子", "mainIds": [181] },
   { "name": "水族館", "mainIds": [181] },
   { "name": "焼肉きんぐ", "mainIds": [181] },
-  { "name": "記念日協会", "mainIds": [181] }
+  { "name": "記念日協会", "mainIds": [181] },
+  { "name": "お絵描きAI", "mainIds": [182] },
+  { "name": "ドラクエウォーク", "mainIds": [182] },
+  { "name": "バディもの", "mainIds": [182] },
+  { "name": "マンション相続相談", "mainIds": [182] },
+  { "name": "兄弟の扱いの差", "mainIds": [182] },
+  { "name": "尊敬してる歴史上の人物", "mainIds": [182] },
+  { "name": "新海誠", "mainIds": [182] },
+  { "name": "椅子返品", "mainIds": [182] },
+  { "name": "脱毛トレンド", "mainIds": [182] },
+  { "name": "腰痛対策", "mainIds": [182] }
 ]

@@ -846,7 +846,7 @@
   { "name": "オノマトペ", "mainIds": [128] },
   { "name": "キャンセルカルチャー", "mainIds": [128] },
   { "name": "ソシャゲ・DLC課金", "mainIds": [128] },
-  { "name": "ポケモン", "mainIds": [128] },
+  { "name": "ポケモン", "mainIds": [128, 187] },
   { "name": "作品の続編", "mainIds": [128] },
   { "name": "性癖", "mainIds": [128, 133, 158] },
   { "name": "次に来る作品ジャンル", "mainIds": [128] },
@@ -1402,5 +1402,16 @@
   { "name": "プレゼント交換", "mainIds": [186] },
   { "name": "某有名カフェ", "mainIds": [186] },
   { "name": "注文時のコツ", "mainIds": [186] },
-  { "name": "異性の魅力", "mainIds": [186] }
+  { "name": "異性の魅力", "mainIds": [186] },
+  { "name": "こむらがえり", "mainIds": [187] },
+  { "name": "エロと鼻血", "mainIds": [187] },
+  { "name": "サイゼリア大盛廃止", "mainIds": [187] },
+  { "name": "サバイバル物語", "mainIds": [187] },
+  { "name": "タイアップ", "mainIds": [187] },
+  { "name": "主題と作品", "mainIds": [187] },
+  { "name": "体調のサイン", "mainIds": [187] },
+  { "name": "居酒屋での振る舞い", "mainIds": [187] },
+  { "name": "摂取した作品", "mainIds": [187] },
+  { "name": "時間管理", "mainIds": [187] },
+  { "name": "電気代", "mainIds": [187] }
 ]

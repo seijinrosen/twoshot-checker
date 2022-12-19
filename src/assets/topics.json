@@ -1413,5 +1413,14 @@
   { "name": "居酒屋での振る舞い", "mainIds": [187] },
   { "name": "摂取した作品", "mainIds": [187] },
   { "name": "時間管理", "mainIds": [187] },
-  { "name": "電気代", "mainIds": [187] }
+  { "name": "電気代", "mainIds": [187] },
+  { "name": "ぎっくり腰", "mainIds": [188] },
+  { "name": "ダイエット企画の段取り", "mainIds": [188] },
+  { "name": "二郎談義", "mainIds": [188] },
+  { "name": "今後の予定", "mainIds": [188] },
+  { "name": "今日までの遊び履歴", "mainIds": [188] },
+  { "name": "日本語が通じないRevin", "mainIds": [188] },
+  { "name": "独り遊びが思いつかん", "mainIds": [188] },
+  { "name": "遊び相手募集", "mainIds": [188] },
+  { "name": "関東へ遊びに来た無職", "mainIds": [188] }
 ]

@@ -10,6 +10,11 @@ from pathlib import Path
 import gtfu
 import pyperclip
 
+ASSETS_PATH = Path("src") / "assets"
+ONES_JSON = ASSETS_PATH / "ones.json"
+RAW_JSON = ASSETS_PATH / "raw.json"
+TOPICS_JSON = ASSETS_PATH / "topics.json"
+
 
 @dataclass
 class Item:
@@ -18,7 +23,7 @@ class Item:
     id: int
 
 
-raw_json_str = Path("src/assets/raw.json").read_text()
+raw_json_str = RAW_JSON.read_text()
 items = [Item(**d) for d in json.loads(raw_json_str)]
 
 new_videoId = input("? videoId: ")
@@ -49,12 +54,16 @@ for item in items:
 ones_list = [{"name": k, "mainIds": v} for k, v in ones_dict.items()]
 topics_list = [{"name": k, "mainIds": v} for k, v in topics_dict.items()]
 
-Path("src/assets/ones.json").write_text(json.dumps(ones_list, ensure_ascii=False))
-Path("src/assets/raw.json").write_text(json.dumps(raw_list, ensure_ascii=False))
-Path("src/assets/topics.json").write_text(json.dumps(topics_list, ensure_ascii=False))
+ONES_JSON.write_text(json.dumps(ones_list, ensure_ascii=False))
+RAW_JSON.write_text(json.dumps(raw_list, ensure_ascii=False))
+TOPICS_JSON.write_text(json.dumps(topics_list, ensure_ascii=False))
 
 
 command = "pnpm run prettier:write"
+subprocess.run(command.split(), check=True)
+
+
+command = "git add " + str(ASSETS_PATH)
 subprocess.run(command.split(), check=True)
 
 

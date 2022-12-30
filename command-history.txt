@@ -23,3 +23,4 @@ pnpm remove react-router-dom
 pnpm add --save-dev husky
 pnpm add --save-dev prettier
 pnpm dlx husky-init && pnpm install
+pnpm add --save-dev lint-staged

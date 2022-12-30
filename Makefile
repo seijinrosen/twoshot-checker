@@ -1,6 +1,9 @@
 dev:
 	pnpm run dev
 
+git-reset:
+	git reset --soft HEAD^
+
 switch:
 	git switch --create develop
 

@@ -9,6 +9,7 @@ specifiers:
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0
   framer-motion: 7.5.3
+  husky: ^8.0.2
   react: 18.2.0
   react-dom: 18.2.0
   react-hotkeys-hook: 3.4.7
@@ -31,6 +32,7 @@ devDependencies:
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0_vite@3.1.8
+  husky: 8.0.2
   typescript: 4.8.4
   vite: 3.1.8
 
@@ -2027,6 +2029,12 @@ packages:
   /hotkeys-js/3.9.4:
     resolution: {integrity: sha512-2zuLt85Ta+gIyvs4N88pCYskNrxf1TFv3LR9t5mdAZIX8BcgQQ48F2opUptvHa6m8zsy5v/a0i9mWzTrlNWU0Q==}
     dev: false
+
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}

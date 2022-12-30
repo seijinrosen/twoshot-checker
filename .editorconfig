@@ -1,0 +1,9 @@
+# https://EditorConfig.org
+
+root = true
+
+[.editorconfig]
+trim_trailing_whitespace = true
+
+[Makefile]
+trim_trailing_whitespace = true

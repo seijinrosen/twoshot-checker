@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -51,6 +52,11 @@ topics_list = [{"name": k, "mainIds": v} for k, v in topics_dict.items()]
 Path("src/assets/ones.json").write_text(json.dumps(ones_list, ensure_ascii=False))
 Path("src/assets/raw.json").write_text(json.dumps(raw_list, ensure_ascii=False))
 Path("src/assets/topics.json").write_text(json.dumps(topics_list, ensure_ascii=False))
+
+
+command = "pnpm run prettier:write"
+subprocess.run(command.split(), check=True)
+
 
 text = f"Add TWOSHOT {items[-1].id}"
 pyperclip.copy(text)  # type: ignore

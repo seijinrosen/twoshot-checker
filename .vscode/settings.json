@@ -11,7 +11,11 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "python.linting.banditArgs": ["--skip=B101,B404,B603"]
 }

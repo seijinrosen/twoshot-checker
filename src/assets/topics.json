@@ -1434,5 +1434,17 @@
   { "name": "親力", "mainIds": [189] },
   { "name": "話す時の癖", "mainIds": [189] },
   { "name": "赤ちゃんの金玉", "mainIds": [189] },
-  { "name": "近所のバー", "mainIds": [189] }
+  { "name": "近所のバー", "mainIds": [189] },
+  { "name": "あー年末", "mainIds": [190] },
+  { "name": "もっこり半兵衛", "mainIds": [190] },
+  { "name": "バーでのコミュニケーション", "mainIds": [190] },
+  { "name": "ヒカルの碁", "mainIds": [190] },
+  { "name": "喫煙者の集団", "mainIds": [190] },
+  { "name": "映像の世紀", "mainIds": [190] },
+  { "name": "本の消化", "mainIds": [190] },
+  { "name": "椎間板ペチャンコ", "mainIds": [190] },
+  { "name": "洋ゲーの日本語化", "mainIds": [190] },
+  { "name": "男の娘", "mainIds": [190] },
+  { "name": "腐女子ノリ", "mainIds": [190] },
+  { "name": "読書体験", "mainIds": [190] }
 ]

@@ -22,3 +22,4 @@ pnpm add react-router-dom@6
 pnpm remove react-router-dom
 pnpm add --save-dev husky
 pnpm add --save-dev prettier
+pnpm dlx husky-init && pnpm install

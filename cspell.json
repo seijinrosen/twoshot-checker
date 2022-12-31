@@ -1,14 +1,5 @@
 {
-  "ignorePaths": [
-    "package-lock.json",
-    "node_modules",
-    "vscode-extension",
-    ".git/objects",
-    ".vscode",
-    ".vscode-insiders",
-    "pnpm-lock.yaml",
-    "raw.json"
-  ],
+  "ignorePaths": ["pnpm-lock.yaml", "public/vite.svg", "src/assets/raw.json"],
   "words": [
     "ADHD",
     "chakra",

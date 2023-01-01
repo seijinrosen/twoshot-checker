@@ -15,7 +15,7 @@ specifiers:
   prettier: ^2.8.1
   react: 18.2.0
   react-dom: 18.2.0
-  react-hotkeys-hook: 3.4.7
+  react-hotkeys-hook: 4.3.2
   react-icons: 4.7.1
   typescript: 4.9.4
   vite: 3.2.5
@@ -28,7 +28,7 @@ dependencies:
   framer-motion: 7.10.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-hotkeys-hook: 3.4.7_biqbaboplfbrettd7655fr4n2y
+  react-hotkeys-hook: 4.3.2_biqbaboplfbrettd7655fr4n2y
   react-icons: 4.7.1_react@18.2.0
 
 devDependencies:
@@ -2755,10 +2755,6 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /hotkeys-js/3.9.4:
-    resolution: {integrity: sha512-2zuLt85Ta+gIyvs4N88pCYskNrxf1TFv3LR9t5mdAZIX8BcgQQ48F2opUptvHa6m8zsy5v/a0i9mWzTrlNWU0Q==}
-    dev: false
-
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
@@ -3233,13 +3229,12 @@ packages:
       use-sidecar: 1.1.2_kzbn2opkn2327fwg5yzwzya5o4
     dev: false
 
-  /react-hotkeys-hook/3.4.7_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-+bbPmhPAl6ns9VkXkNNyxlmCAIyDAcWbB76O4I0ntr3uWCRuIQf/aRLartUahe9chVMPj+OEzzfk3CQSjclUEQ==}
+  /react-hotkeys-hook/4.3.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ZA/li3kBDHuRTtJIf7Td41UU87bPtnt9xV4r+PlEzpnFoYRDVspk3B+mlaX75zowyQygMVmoaWnM4B88lkyExQ==}
     peerDependencies:
       react: '>=16.8.1'
       react-dom: '>=16.8.1'
     dependencies:
-      hotkeys-js: 3.9.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false

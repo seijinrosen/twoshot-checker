@@ -115,7 +115,7 @@
   { "name": "ゲーム実況やってた同士", "mainIds": [31] },
   { "name": "初の女性ゲスト", "mainIds": [31] },
   { "name": "結婚観・恋愛観", "mainIds": [31] },
-  { "name": "あけおめ", "mainIds": [32, 120] },
+  { "name": "あけおめ", "mainIds": [32, 120, 191] },
   { "name": "今年の抱負", "mainIds": [32] },
   { "name": "格ゲー観戦が熱い", "mainIds": [32] },
   { "name": "正月は寝ゲーム", "mainIds": [32] },
@@ -1446,5 +1446,14 @@
   { "name": "洋ゲーの日本語化", "mainIds": [190] },
   { "name": "男の娘", "mainIds": [190] },
   { "name": "腐女子ノリ", "mainIds": [190] },
-  { "name": "読書体験", "mainIds": [190] }
+  { "name": "読書体験", "mainIds": [190] },
+  { "name": "FIREと無職", "mainIds": [191] },
+  { "name": "Revin、ASD疑惑", "mainIds": [191] },
+  { "name": "エレキギター購入", "mainIds": [191] },
+  { "name": "ススル漫遊記", "mainIds": [191] },
+  { "name": "スマートリモコン", "mainIds": [191] },
+  { "name": "ダイエット始動", "mainIds": [191] },
+  { "name": "承認欲求の善悪", "mainIds": [191] },
+  { "name": "海老の東京旅行記", "mainIds": [191] },
+  { "name": "海老の鍵診断", "mainIds": [191] }
 ]

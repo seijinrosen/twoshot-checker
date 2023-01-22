@@ -1455,5 +1455,9 @@
   { "name": "ダイエット始動", "mainIds": [191] },
   { "name": "承認欲求の善悪", "mainIds": [191] },
   { "name": "海老の東京旅行記", "mainIds": [191] },
-  { "name": "海老の鍵診断", "mainIds": [191] }
+  { "name": "海老の鍵診断", "mainIds": [191] },
+  {
+    "name": "VTuberクトゥルフ神話TRPG『タオちゃんはVtuberを閉じ込めたい』をやってみた！",
+    "mainIds": [192]
+  }
 ]

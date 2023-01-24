@@ -11,7 +11,7 @@ after-develop-merged:
 	git switch main
 	git pull --prune
 	git branch --delete develop
-	make switch
+	git switch --create develop
 
 update:
 	pnpm update

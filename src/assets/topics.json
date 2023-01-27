@@ -1353,7 +1353,7 @@
   { "name": "ブルガダ症候群", "mainIds": [181] },
   { "name": "リスナーと喋った", "mainIds": [181] },
   { "name": "性欲が抜けた男性", "mainIds": [181] },
-  { "name": "椅子", "mainIds": [181, 184] },
+  { "name": "椅子", "mainIds": [181, 184, 195] },
   { "name": "水族館", "mainIds": [181] },
   { "name": "焼肉きんぐ", "mainIds": [181] },
   { "name": "記念日協会", "mainIds": [181] },
@@ -1477,5 +1477,15 @@
   { "name": "新作ゲーム", "mainIds": [194] },
   { "name": "渋谷の謎の広告", "mainIds": [194] },
   { "name": "色覚の性差", "mainIds": [194] },
-  { "name": "骨壷に入れたいゲーム", "mainIds": [194] }
+  { "name": "骨壷に入れたいゲーム", "mainIds": [194] },
+  { "name": "NHKドラマ『あまちゃん』", "mainIds": [195] },
+  { "name": "なろう小説と現代の若者", "mainIds": [195] },
+  { "name": "創作物の天才キャラ", "mainIds": [195] },
+  { "name": "嫌なら見るな", "mainIds": [195] },
+  { "name": "家電", "mainIds": [195] },
+  { "name": "寒すぎる", "mainIds": [195] },
+  { "name": "寝てる時の夢", "mainIds": [195] },
+  { "name": "新年の抱負", "mainIds": [195] },
+  { "name": "鍼治療", "mainIds": [195] },
+  { "name": "関西弁", "mainIds": [195] }
 ]

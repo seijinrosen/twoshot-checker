@@ -1487,5 +1487,14 @@
   { "name": "寝てる時の夢", "mainIds": [195] },
   { "name": "新年の抱負", "mainIds": [195] },
   { "name": "鍼治療", "mainIds": [195] },
-  { "name": "関西弁", "mainIds": [195] }
+  { "name": "関西弁", "mainIds": [195] },
+  { "name": "FF14チート", "mainIds": [196] },
+  { "name": "Revinバグる", "mainIds": [196] },
+  { "name": "TwitterAPI有料化", "mainIds": [196] },
+  { "name": "モンスターを飲む", "mainIds": [196] },
+  { "name": "不倫報道", "mainIds": [196] },
+  { "name": "冷凍うどん0.5玉問題", "mainIds": [196] },
+  { "name": "回転寿司ペロペロ問題", "mainIds": [196] },
+  { "name": "広域強盗事件", "mainIds": [196] },
+  { "name": "雀魂殺人予告", "mainIds": [196] }
 ]

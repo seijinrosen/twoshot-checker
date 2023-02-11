@@ -1508,5 +1508,16 @@
   { "name": "同性愛婚", "mainIds": [197] },
   { "name": "変な癖", "mainIds": [197] },
   { "name": "朝の寒さ", "mainIds": [197] },
-  { "name": "醤油ペロペロ", "mainIds": [197] }
+  { "name": "醤油ペロペロ", "mainIds": [197] },
+  { "name": "DLSiteみんなで翻訳", "mainIds": [198] },
+  { "name": "PCの不具合相談", "mainIds": [198] },
+  { "name": "オーディオブック", "mainIds": [198] },
+  { "name": "ゲーム作り", "mainIds": [198] },
+  { "name": "リメイク", "mainIds": [198] },
+  { "name": "ルームシェア", "mainIds": [198] },
+  { "name": "レシピの「白米」", "mainIds": [198] },
+  { "name": "ローカライズ論争", "mainIds": [198] },
+  { "name": "感情移入", "mainIds": [198] },
+  { "name": "石油ストーブ", "mainIds": [198] },
+  { "name": "確定申告", "mainIds": [198] }
 ]

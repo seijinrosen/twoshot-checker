@@ -1,7 +1,7 @@
 [
   { "name": "ダイエットのその後", "mainIds": [0] },
   { "name": "ファミマのくじ", "mainIds": [0] },
-  { "name": "健康", "mainIds": [0, 25] },
+  { "name": "健康", "mainIds": [0, 25, 200] },
   { "name": "せまい効率厨", "mainIds": [1] },
   { "name": "未成年者がエロ絵を描いたら…", "mainIds": [1] },
   { "name": "野菜と健康とデリバリー", "mainIds": [1] },
@@ -34,7 +34,7 @@
   { "name": "鍋物の季節", "mainIds": [9] },
   { "name": "上京して居候", "mainIds": [10] },
   { "name": "涙もろい", "mainIds": [10] },
-  { "name": "近況", "mainIds": [10, 181] },
+  { "name": "近況", "mainIds": [10, 181, 200] },
   { "name": "離婚した話", "mainIds": [10] },
   { "name": "OPENRECに企画書出したら？", "mainIds": [11] },
   { "name": "よく聴く音楽", "mainIds": [11] },
@@ -1128,7 +1128,7 @@
   { "name": "海", "mainIds": [157] },
   { "name": "無職の心得", "mainIds": [157] },
   { "name": "生の鶏肉", "mainIds": [157] },
-  { "name": "町内会", "mainIds": [157] },
+  { "name": "町内会", "mainIds": [157, 200] },
   { "name": "銃撃事件", "mainIds": [157] },
   { "name": "争いは同じレベルの…", "mainIds": [158] },
   { "name": "創作の専業化", "mainIds": [158] },
@@ -1529,5 +1529,15 @@
   { "name": "何歳まで活動する？", "mainIds": [199] },
   { "name": "子育て相談", "mainIds": [199] },
   { "name": "最近始めたこと", "mainIds": [199] },
-  { "name": "睡眠の質", "mainIds": [199] }
+  { "name": "睡眠の質", "mainIds": [199] },
+  { "name": "2022のM-1", "mainIds": [200] },
+  { "name": "Steamのエロゲ", "mainIds": [200] },
+  { "name": "YouTuberの収益", "mainIds": [200] },
+  { "name": "お金がない", "mainIds": [200] },
+  { "name": "ラジオ200回！", "mainIds": [200] },
+  { "name": "政治＆借金相談", "mainIds": [200] },
+  { "name": "旅行", "mainIds": [200] },
+  { "name": "結婚観が真逆？", "mainIds": [200] },
+  { "name": "電力", "mainIds": [200] },
+  { "name": "麻雀したい", "mainIds": [200] }
 ]

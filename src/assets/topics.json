@@ -776,7 +776,7 @@
   { "name": "職場バレ", "mainIds": [120] },
   { "name": "胸焼け", "mainIds": [120] },
   { "name": "SNS乗っ取り", "mainIds": [121] },
-  { "name": "コーヒー", "mainIds": [121, 172] },
+  { "name": "コーヒー", "mainIds": [121, 172, 201] },
   { "name": "テレビ視聴", "mainIds": [121] },
   { "name": "ラブドール", "mainIds": [121] },
   { "name": "加害と被害", "mainIds": [121] },
@@ -1539,5 +1539,15 @@
   { "name": "旅行", "mainIds": [200] },
   { "name": "結婚観が真逆？", "mainIds": [200] },
   { "name": "電力", "mainIds": [200] },
-  { "name": "麻雀したい", "mainIds": [200] }
+  { "name": "麻雀したい", "mainIds": [200] },
+  { "name": "2022一番のゲーム", "mainIds": [201] },
+  { "name": "ChatGPTの将来", "mainIds": [201] },
+  { "name": "PS5", "mainIds": [201] },
+  { "name": "ネット対戦ゲーム", "mainIds": [201] },
+  { "name": "プログラミング用語全開の会話", "mainIds": [201] },
+  { "name": "出社を求める会社", "mainIds": [201] },
+  { "name": "子育て", "mainIds": [201] },
+  { "name": "家賃", "mainIds": [201] },
+  { "name": "役所の領収書", "mainIds": [201] },
+  { "name": "睡眠障害", "mainIds": [201] }
 ]

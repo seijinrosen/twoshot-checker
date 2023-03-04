@@ -1497,7 +1497,7 @@
   { "name": "回転寿司ペロペロ問題", "mainIds": [196] },
   { "name": "広域強盗事件", "mainIds": [196] },
   { "name": "雀魂殺人予告", "mainIds": [196] },
-  { "name": "ChatGPT", "mainIds": [197] },
+  { "name": "ChatGPT", "mainIds": [197, 202] },
   { "name": "Revin、感電する", "mainIds": [197] },
   { "name": "ウソツキハナチャン", "mainIds": [197] },
   { "name": "ハンバーガー", "mainIds": [197] },
@@ -1549,5 +1549,17 @@
   { "name": "子育て", "mainIds": [201] },
   { "name": "家賃", "mainIds": [201] },
   { "name": "役所の領収書", "mainIds": [201] },
-  { "name": "睡眠障害", "mainIds": [201] }
+  { "name": "睡眠障害", "mainIds": [201] },
+  { "name": "Twitter凍結", "mainIds": [202] },
+  { "name": "カプレーゼ", "mainIds": [202] },
+  { "name": "スーパー", "mainIds": [202] },
+  { "name": "マイナンバー", "mainIds": [202] },
+  { "name": "人の本性", "mainIds": [202] },
+  { "name": "友達と恋人", "mainIds": [202] },
+  { "name": "大学の思い出", "mainIds": [202] },
+  { "name": "弘法筆を選ばず", "mainIds": [202] },
+  { "name": "昆虫食", "mainIds": [202] },
+  { "name": "最近の生活", "mainIds": [202] },
+  { "name": "花粉症", "mainIds": [202] },
+  { "name": "貴族と大衆", "mainIds": [202] }
 ]

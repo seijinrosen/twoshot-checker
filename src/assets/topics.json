@@ -1582,5 +1582,17 @@
   { "name": "メガネ買った", "mainIds": [204] },
   { "name": "映画『Winny』", "mainIds": [204] },
   { "name": "美肌", "mainIds": [204] },
-  { "name": "過程と結果", "mainIds": [204] }
+  { "name": "過程と結果", "mainIds": [204] },
+  { "name": "AI電話", "mainIds": [205] },
+  { "name": "FF14一区切り", "mainIds": [205] },
+  { "name": "アレクサ", "mainIds": [205] },
+  { "name": "ゲーム原体験", "mainIds": [205] },
+  { "name": "ノートのキーボード", "mainIds": [205] },
+  { "name": "口座解約", "mainIds": [205] },
+  { "name": "囲碁と将棋", "mainIds": [205] },
+  { "name": "年度末", "mainIds": [205] },
+  { "name": "成田悠輔", "mainIds": [205] },
+  { "name": "未婚で40代", "mainIds": [205] },
+  { "name": "海老、動画編集者に？", "mainIds": [205] },
+  { "name": "迷惑メール百景", "mainIds": [205] }
 ]

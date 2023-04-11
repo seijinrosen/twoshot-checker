@@ -344,7 +344,7 @@
   { "name": "ダイエット", "mainIds": [70, 75, 77, 83, 189, 194] },
   { "name": "メンタル", "mainIds": [70] },
   { "name": "前回の喧嘩", "mainIds": [70] },
-  { "name": "家事代行", "mainIds": [70] },
+  { "name": "家事代行", "mainIds": [70, 206] },
   { "name": "月が綺麗ですね", "mainIds": [70] },
   { "name": "服", "mainIds": [70] },
   { "name": "転売屋の論理", "mainIds": [70] },
@@ -1594,5 +1594,17 @@
   { "name": "成田悠輔", "mainIds": [205] },
   { "name": "未婚で40代", "mainIds": [205] },
   { "name": "海老、動画編集者に？", "mainIds": [205] },
-  { "name": "迷惑メール百景", "mainIds": [205] }
+  { "name": "迷惑メール百景", "mainIds": [205] },
+  { "name": "Alexa", "mainIds": [206] },
+  { "name": "Winny", "mainIds": [206] },
+  { "name": "おじさんとパフェ", "mainIds": [206] },
+  { "name": "ちんちん", "mainIds": [206] },
+  { "name": "アスカ見参", "mainIds": [206] },
+  { "name": "ルービックキューブ", "mainIds": [206] },
+  { "name": "二次創作", "mainIds": [206] },
+  { "name": "情報商材", "mainIds": [206] },
+  { "name": "春日ペンギン池問題", "mainIds": [206] },
+  { "name": "監視カメラ", "mainIds": [206] },
+  { "name": "自己投影", "mainIds": [206] },
+  { "name": "非アンチ", "mainIds": [206] }
 ]

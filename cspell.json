@@ -1,7 +1,12 @@
 {
-  "ignorePaths": ["pnpm-lock.yaml", "public/vite.svg", "src/assets/raw.json"],
+  "ignorePaths": [
+    "/pnpm-lock.yaml",
+    "/public/vite.svg",
+    "/src/assets/raw.json"
+  ],
   "words": [
     "ADHD",
+    "Alexa",
     "chakra",
     "CPAP",
     "gtfu",

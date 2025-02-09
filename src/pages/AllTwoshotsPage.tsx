@@ -17,7 +17,7 @@ import rawJson from "../assets/raw.json";
 const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
   const [reversed, setReversed] = useState(true);
   const filteredTwoshots = rawJson.filter(({ title }) =>
-    title.toLowerCase().includes(searchQuery.toLowerCase())
+    title.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   return (
@@ -59,7 +59,7 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
                 <ExternalLinkIcon color="green.500" />
               </Link>
             </ListItem>
-          )
+          ),
         )}
       </OrderedList>
     </>

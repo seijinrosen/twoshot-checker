@@ -25,7 +25,7 @@ const TalkDeckPage = ({
   const [selectedTagName, setSelectedTagName] = useState("");
   const [selectedMainIds, setSelectedMainIds] = useState<number[]>([]);
   const filteredTags = allTags.filter(({ name }) =>
-    name.toLowerCase().includes(searchQuery.toLowerCase())
+    name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
   const [showNum, setShowNum] = useState(200);
 

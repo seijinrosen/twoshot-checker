@@ -23,7 +23,7 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       top={0}
       bg={useColorModeValue(
         "rgba(255, 255, 255, 0.8)",
-        "rgba(26, 32, 44, 0.8)"
+        "rgba(26, 32, 44, 0.8)",
       )}
       px={4}
       backdropFilter="saturate(180%) blur(5px)"

@@ -2,6 +2,7 @@ check:
 	pnpm run cspell
 	pnpm run prettier:check
 	pnpm run build
+	pnpm run build-storybook
 
 dev:
 	pnpm run dev

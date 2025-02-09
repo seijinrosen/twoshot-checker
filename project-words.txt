@@ -10,6 +10,8 @@ KOTOKO
 luluto
 Mildom
 MMORPG
+njsproj
+ntvs
 OPENREC
 Revin
 Revot

@@ -31,11 +31,17 @@ const TalkDeckPage = ({
 
   return (
     <Box>
-      <Stat textAlign="center" mb={3}>
+      <Stat
+        textAlign="center"
+        mb={3}
+      >
         <StatLabel>トークデッキ</StatLabel>
         <StatNumber>
           {filteredTags.length.toLocaleString()}{" "}
-          <Box as="span" fontSize="sm">
+          <Box
+            as="span"
+            fontSize="sm"
+          >
             枚
           </Box>
         </StatNumber>
@@ -51,17 +57,29 @@ const TalkDeckPage = ({
           onOpen={onOpen}
         />
       ))}
-      <VStack spacing={3} my={8}>
+      <VStack
+        spacing={3}
+        my={8}
+      >
         <Text>
           {Math.min(showNum, filteredTags.length).toLocaleString()} /{" "}
           {filteredTags.length.toLocaleString()}
         </Text>
         {showNum < filteredTags.length && (
-          <Stack direction="row" spacing={2}>
-            <Button w={120} onClick={() => setShowNum(showNum + 200)}>
+          <Stack
+            direction="row"
+            spacing={2}
+          >
+            <Button
+              w={120}
+              onClick={() => setShowNum(showNum + 200)}
+            >
               Show +200
             </Button>
-            <Button w={120} onClick={() => setShowNum(filteredTags.length)}>
+            <Button
+              w={120}
+              onClick={() => setShowNum(filteredTags.length)}
+            >
               Show All
             </Button>
           </Stack>

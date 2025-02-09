@@ -14,3 +14,5 @@ ignorePaths:
   - "/pnpm-lock.yaml"
   - "/public/vite.svg"
   - "/src/assets/raw.json"
+
+useGitignore: true

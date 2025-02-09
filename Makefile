@@ -1,3 +1,8 @@
+check:
+	pnpm run cspell
+	pnpm run prettier:check
+	pnpm run build
+
 dev:
 	pnpm run dev
 

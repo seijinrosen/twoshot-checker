@@ -21,17 +21,34 @@ function App() {
   const [allTags] = useState(shuffle(onesJson.concat(topicsJson)));
 
   return (
-    <Box display="flex" flexDirection="column" minH="100vh">
-      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <Container as="main" maxW="container.md" mb={5}>
-        <Tabs isFitted variant="enclosed">
+    <Box
+      display="flex"
+      flexDirection="column"
+      minH="100vh"
+    >
+      <Header
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
+      <Container
+        as="main"
+        maxW="container.md"
+        mb={5}
+      >
+        <Tabs
+          isFitted
+          variant="enclosed"
+        >
           <TabList mb={5}>
             <Tab>Talk Deck</Tab>
             <Tab>ALL TWOSHOTs</Tab>
           </TabList>
           <TabPanels>
             <TabPanel p={0}>
-              <TalkDeckPage searchQuery={searchQuery} allTags={allTags} />
+              <TalkDeckPage
+                searchQuery={searchQuery}
+                allTags={allTags}
+              />
             </TabPanel>
             <TabPanel p={0}>
               <AllTwoshotsPage searchQuery={searchQuery} />

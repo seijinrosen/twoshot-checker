@@ -37,11 +37,20 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
         <Spacer />
         {filteredTwoshots.length.toLocaleString()} 件
       </Flex>
-      <OrderedList ml={8} spacing={4}>
+      <OrderedList
+        ml={8}
+        spacing={4}
+      >
         {(reversed ? filteredTwoshots.slice().reverse() : filteredTwoshots).map(
           ({ id, title, videoId }) => (
-            <ListItem key={id} value={id}>
-              <Link href={`https://youtu.be/${videoId}`} isExternal>
+            <ListItem
+              key={id}
+              value={id}
+            >
+              <Link
+                href={`https://youtu.be/${videoId}`}
+                isExternal
+              >
                 {searchQuery ? (
                   <Highlight
                     query={searchQuery}

@@ -25,7 +25,10 @@ const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
 
   return (
     <InputGroup>
-      <InputLeftElement pointerEvents="none" children={<SearchIcon />} />
+      <InputLeftElement
+        pointerEvents="none"
+        children={<SearchIcon />}
+      />
       <Input
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
@@ -36,7 +39,10 @@ const SearchField = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       <InputRightElement
         children={
           searchQuery ? (
-            <Tooltip hasArrow label="消去">
+            <Tooltip
+              hasArrow
+              label="消去"
+            >
               <CloseButton onClick={() => setSearchQuery("")} />
             </Tooltip>
           ) : isLargerThan600 ? (

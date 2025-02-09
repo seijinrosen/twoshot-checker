@@ -28,7 +28,11 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
       px={4}
       backdropFilter="saturate(180%) blur(5px)"
     >
-      <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+      <Flex
+        h={16}
+        alignItems={"center"}
+        justifyContent={"space-between"}
+      >
         <Heading
           as="a"
           href="/"

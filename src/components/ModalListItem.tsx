@@ -23,7 +23,10 @@ const ModalListItem = ({
           boxShadow: "xl",
         }}
       >
-        <LinkOverlay href={`https://youtu.be/${videoId}`} isExternal>
+        <LinkOverlay
+          href={`https://youtu.be/${videoId}`}
+          isExternal
+        >
           <Highlight
             query={tagName}
             styles={{
@@ -37,7 +40,10 @@ const ModalListItem = ({
           >
             {title}
           </Highlight>
-          <ExternalLinkIcon mx="2px" color="green.500" />
+          <ExternalLinkIcon
+            mx="2px"
+            color="green.500"
+          />
         </LinkOverlay>
       </LinkBox>
     </ListItem>

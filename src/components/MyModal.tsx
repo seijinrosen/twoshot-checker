@@ -28,7 +28,11 @@ const MyModal = ({
   const [reversed, setReversed] = useState(false);
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      scrollBehavior="inside"
+    >
       <ModalOverlay />
       <ModalContent>
         <ModalHeader mr={3}>
@@ -47,9 +51,17 @@ const MyModal = ({
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <UnorderedList spacing={4} listStyleType="none" m={0}>
+          <UnorderedList
+            spacing={4}
+            listStyleType="none"
+            m={0}
+          >
             {(reversed ? mainIds.slice().reverse() : mainIds).map((mainId) => (
-              <ModalListItem key={mainId} mainId={mainId} tagName={tagName} />
+              <ModalListItem
+                key={mainId}
+                mainId={mainId}
+                tagName={tagName}
+              />
             ))}
           </UnorderedList>
         </ModalBody>
@@ -65,7 +77,10 @@ const MyModal = ({
               Reverse
             </Button>
           )}
-          <Button colorScheme="blue" onClick={onClose}>
+          <Button
+            colorScheme="blue"
+            onClick={onClose}
+          >
             Close
           </Button>
         </ModalFooter>

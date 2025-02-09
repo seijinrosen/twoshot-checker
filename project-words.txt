@@ -6,10 +6,13 @@ CPAP
 gtfu
 JASRAC
 kenshi
+knip
 KOTOKO
 luluto
 Mildom
 MMORPG
+njsproj
+ntvs
 OPENREC
 Revin
 Revot

@@ -6,6 +6,7 @@ CPAP
 gtfu
 JASRAC
 kenshi
+knip
 KOTOKO
 luluto
 Mildom

@@ -3,9 +3,13 @@ check:
 	pnpm run prettier:check
 	pnpm run build
 	pnpm run build-storybook
+	pnpm run knip
 
 dev:
 	pnpm run dev
+
+fix:
+	pnpm run prettier:write
 
 git-reset:
 	git reset --soft HEAD^

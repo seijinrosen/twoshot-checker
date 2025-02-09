@@ -48,8 +48,8 @@ const TagButton = ({
       {searchQuery
         ? colored(tagName, searchQuery)
         : isSmallerThan800
-        ? shorten(tagName)
-        : tagName}
+          ? shorten(tagName)
+          : tagName}
     </Button>
   );
 };

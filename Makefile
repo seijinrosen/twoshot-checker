@@ -5,6 +5,11 @@ check:
 	pnpm run build-storybook
 	pnpm run knip
 
+clean:
+	rm -r node_modules/
+	rm -r dist/
+	rm -r storybook-static/
+
 dev:
 	pnpm run dev
 
@@ -28,7 +33,3 @@ update:
 
 init:
 	pnpm install
-
-clean:
-	rm -r node_modules/
-	rm -r dist/

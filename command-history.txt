@@ -31,3 +31,4 @@ pnpm create @knip/config
 # chakra-ui v2 to v3 migration
 pnpm remove @emotion/styled framer-motion
 pnpm add @chakra-ui/react@latest @emotion/react@latest
+pnpm dlx @chakra-ui/cli snippet add

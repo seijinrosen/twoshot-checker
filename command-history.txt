@@ -27,3 +27,6 @@ pnpm add --save-dev lint-staged
 pnpm add --save-dev cspell
 
 pnpm create @knip/config
+
+# chakra-ui v2 to v3 migration
+pnpm remove @emotion/styled framer-motion

@@ -1,10 +1,10 @@
 import {
   Box,
   Button,
+  Center,
   Stack,
   Stat,
   StatLabel,
-  StatNumber,
   Text,
   useDisclosure,
   VStack,
@@ -21,7 +21,7 @@ const TalkDeckPage = ({
   searchQuery: string;
   allTags: TagType[];
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { open: isOpen, onOpen, onClose } = useDisclosure();
   const [selectedTagName, setSelectedTagName] = useState("");
   const [selectedMainIds, setSelectedMainIds] = useState<number[]>([]);
   const filteredTags = allTags.filter(({ name }) =>
@@ -31,21 +31,17 @@ const TalkDeckPage = ({
 
   return (
     <Box>
-      <Stat
-        textAlign="center"
-        mb={3}
-      >
-        <StatLabel>トークデッキ</StatLabel>
-        <StatNumber>
-          {filteredTags.length.toLocaleString()}{" "}
-          <Box
-            as="span"
-            fontSize="sm"
-          >
-            枚
-          </Box>
-        </StatNumber>
-      </Stat>
+      <Center mb={4}>
+        <div>
+          <Stat.Root>
+            <StatLabel>トークデッキ</StatLabel>
+            <Stat.ValueText alignItems="baseline">
+              {filteredTags.length.toLocaleString()}{" "}
+              <Stat.ValueUnit>枚</Stat.ValueUnit>
+            </Stat.ValueText>
+          </Stat.Root>
+        </div>
+      </Center>
       {filteredTags.slice(0, showNum).map(({ name, mainIds }, i) => (
         <TagButton
           key={i}
@@ -58,7 +54,7 @@ const TalkDeckPage = ({
         />
       ))}
       <VStack
-        spacing={3}
+        gap={3}
         my={8}
       >
         <Text>
@@ -68,7 +64,7 @@ const TalkDeckPage = ({
         {showNum < filteredTags.length && (
           <Stack
             direction="row"
-            spacing={2}
+            gap={2}
           >
             <Button
               w={120}

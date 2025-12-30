@@ -31,14 +31,17 @@ const TagButton = ({
   searchQuery: string;
   onOpen: () => void;
 }) => {
-  const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
+  const [isSmallerThan800] = useMediaQuery(["(max-width: 800px)"]);
 
   return (
     <Button
-      size="xs"
+      fontWeight="semibold"
+      gap={0}
+      size="2xs"
       mr={1}
       mb={1}
       rounded={10}
+      variant="surface"
       onClick={() => {
         setTagName(tagName);
         setMainIds(mainIds);

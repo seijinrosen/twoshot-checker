@@ -5,27 +5,29 @@ const Footer = () => {
   return (
     <VStack
       as="footer"
-      spacing={4}
+      gap={4}
       mt="auto"
       mb={12}
     >
       <Stack
         mt={4}
         direction="row"
-        spacing={10}
+        gap={10}
       >
         <Link
           href="https://github.com/seijinrosen/twoshot-checker"
-          isExternal
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <FaGithub fontSize={30} />
+          <FaGithub size={30} />
         </Link>
         <Link
           href="https://twitter.com/seijinrosen"
-          isExternal
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <FaTwitter
-            fontSize={30}
+            size={30}
             color="#1DA1F2"
           />
         </Link>
@@ -34,7 +36,8 @@ const Footer = () => {
         Copyright ©{" "}
         <Link
           href="https://github.com/seijinrosen"
-          isExternal
+          rel="noopener noreferrer"
+          target="_blank"
         >
           seijinrosen
         </Link>{" "}

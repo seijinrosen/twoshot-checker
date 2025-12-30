@@ -1,13 +1,14 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { LuExternalLink as ExternalLinkIcon } from "react-icons/lu";
 import {
   Button,
   Center,
   Flex,
   Heading,
   Highlight,
+  Icon,
   Link,
   ListItem,
-  OrderedList,
+  List as OrderedList,
   Spacer,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -22,24 +23,30 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
 
   return (
     <>
-      <Heading textAlign="center">ALL TWOSHOTs</Heading>
+      <Heading
+        size="4xl"
+        textAlign="center"
+        fontWeight="bold"
+      >
+        ALL TWOSHOTs
+      </Heading>
       <Center mt={4}>
         <Button
-          leftIcon={<HiOutlineSwitchVertical />}
           colorScheme="teal"
           variant={reversed ? "solid" : "outline"}
           onClick={() => setReversed(!reversed)}
         >
-          Reverse
+          <HiOutlineSwitchVertical /> Reverse
         </Button>
       </Center>
       <Flex mb={3}>
         <Spacer />
         {filteredTwoshots.length.toLocaleString()} 件
       </Flex>
-      <OrderedList
+      <OrderedList.Root
+        as="ol"
         ml={8}
-        spacing={4}
+        gap={4}
       >
         {(reversed ? filteredTwoshots.slice().reverse() : filteredTwoshots).map(
           ({ id, title, videoId }) => (
@@ -48,11 +55,14 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
               value={id}
             >
               <Link
+                display="inline"
                 href={`https://youtu.be/${videoId}`}
-                isExternal
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 {searchQuery ? (
                   <Highlight
+                    matchAll
                     query={searchQuery}
                     styles={{
                       fontWeight: "bold",
@@ -65,12 +75,15 @@ const AllTwoshotsPage = ({ searchQuery }: { searchQuery: string }) => {
                 ) : (
                   title
                 )}
-                <ExternalLinkIcon color="green.500" />
+
+                <Icon color="green.500">
+                  <ExternalLinkIcon />
+                </Icon>
               </Link>
             </ListItem>
           ),
         )}
-      </OrderedList>
+      </OrderedList.Root>
     </>
   );
 };

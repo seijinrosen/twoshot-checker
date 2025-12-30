@@ -1,5 +1,11 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Highlight, LinkBox, LinkOverlay, ListItem } from "@chakra-ui/react";
+import { LuExternalLink as ExternalLinkIcon } from "react-icons/lu";
+import {
+  Highlight,
+  Icon,
+  LinkBox,
+  LinkOverlay,
+  ListItem,
+} from "@chakra-ui/react";
 import rawJson from "../assets/raw.json";
 
 const ModalListItem = ({
@@ -25,7 +31,8 @@ const ModalListItem = ({
       >
         <LinkOverlay
           href={`https://youtu.be/${videoId}`}
-          isExternal
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <Highlight
             query={tagName}
@@ -40,10 +47,12 @@ const ModalListItem = ({
           >
             {title}
           </Highlight>
-          <ExternalLinkIcon
+          <Icon
             mx="2px"
             color="green.500"
-          />
+          >
+            <ExternalLinkIcon />
+          </Icon>
         </LinkOverlay>
       </LinkBox>
     </ListItem>

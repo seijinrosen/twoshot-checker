@@ -1,15 +1,15 @@
 import {
   Box,
   Container,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
+  TabsTrigger as Tab,
+  TabsList as TabList,
+  TabsContent as TabPanel,
   Tabs,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import onesJson from "./assets/ones.json";
 import topicsJson from "./assets/topics.json";
+import { useColorModeValue } from "./components/ui/color-mode";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import AllTwoshotsPage from "./pages/AllTwoshotsPage";
@@ -22,6 +22,7 @@ function App() {
 
   return (
     <Box
+      bg={useColorModeValue("", "rgba(26, 32, 44, 0.8)")}
       display="flex"
       flexDirection="column"
       minH="100vh"
@@ -32,29 +33,36 @@ function App() {
       />
       <Container
         as="main"
-        maxW="container.md"
+        maxW="3xl"
         mb={5}
+        px={4}
       >
-        <Tabs
-          isFitted
-          variant="enclosed"
+        <Tabs.Root
+          defaultValue="talkDeck"
+          fitted
+          variant="outline"
         >
           <TabList mb={5}>
-            <Tab>Talk Deck</Tab>
-            <Tab>ALL TWOSHOTs</Tab>
+            <Tab value="talkDeck">Talk Deck</Tab>
+            <Tab value="allTwoshots">ALL TWOSHOTs</Tab>
           </TabList>
-          <TabPanels>
-            <TabPanel p={0}>
-              <TalkDeckPage
-                searchQuery={searchQuery}
-                allTags={allTags}
-              />
-            </TabPanel>
-            <TabPanel p={0}>
-              <AllTwoshotsPage searchQuery={searchQuery} />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
+
+          <TabPanel
+            p={0}
+            value="talkDeck"
+          >
+            <TalkDeckPage
+              searchQuery={searchQuery}
+              allTags={allTags}
+            />
+          </TabPanel>
+          <TabPanel
+            p={0}
+            value="allTwoshots"
+          >
+            <AllTwoshotsPage searchQuery={searchQuery} />
+          </TabPanel>
+        </Tabs.Root>
       </Container>
       <Footer />
     </Box>

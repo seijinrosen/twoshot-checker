@@ -1,16 +1,15 @@
 // https://storybook.js.org/docs/writing-stories/mocking-data-and-modules/mocking-providers
+// https://chakra-ui.com/docs/get-started/frameworks/storybook
 
 import type { Preview } from "@storybook/react";
 
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
-
-import theme from "../src/theme";
+import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <ChakraProvider theme={theme}>
+      <ChakraProvider value={defaultSystem}>
         <Story />
       </ChakraProvider>
     ),

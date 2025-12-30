@@ -1,19 +1,10 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Flex,
-  Heading,
-  IconButton,
-  useColorMode,
-  useColorModeValue,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, useMediaQuery } from "@chakra-ui/react";
 import { SearchFieldType } from "../types";
+import { ColorModeButton, useColorModeValue } from "./ui/color-mode";
 import SearchField from "./SearchField";
 
 const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
-  const [isLargerThan600] = useMediaQuery("(min-width: 600px)");
-  const { colorMode, toggleColorMode } = useColorMode();
+  const [isLargerThan600] = useMediaQuery(["(min-width: 600px)"]);
 
   return (
     <Box
@@ -34,24 +25,19 @@ const Header = ({ searchQuery, setSearchQuery }: SearchFieldType) => {
         justifyContent={"space-between"}
       >
         <Heading
-          as="a"
-          href="/"
-          size="md"
+          asChild
+          fontWeight="bold"
+          lineHeight={1.2}
           mr={4}
           whiteSpace={isLargerThan600 ? "nowrap" : "normal"}
         >
-          TWOSHOT CHECKER
+          <a href="/">TWOSHOT CHECKER</a>
         </Heading>
         <SearchField
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
         />
-        <IconButton
-          ml={1}
-          onClick={toggleColorMode}
-          aria-label="Toggle color mode"
-          icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-        />
+        <ColorModeButton ml={1} />
       </Flex>
     </Box>
   );
